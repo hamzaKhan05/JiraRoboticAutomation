@@ -93,6 +93,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1203.2,3574.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -111,7 +112,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1107.2,3245.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1107.2,3205.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="ss:SecureString" Name="JiraPassword" />
               <Variable x:TypeArguments="x:String" Name="JiraUsername" />
@@ -122,7 +123,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="1044.8,80.8" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[JiraPassword]" PersistanceType="Enterprise" Target="jira-client-side" Username="[JiraUsername]" />
-            <uix:NCheckState DisplayName="Check App State 'Username'" sap:VirtualizedContainerService.HintSize="1044.8,3009.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9c97cb13-6629-4d83-b733-0a6815d92958" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Username'" sap:VirtualizedContainerService.HintSize="1044.8,2969.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9c97cb13-6629-4d83-b733-0a6815d92958" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,2751.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -163,12 +164,12 @@
                       </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '18'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9c97cb13-6629-4d83-b733-0a6815d92958" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '18'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9c97cb13-6629-4d83-b733-0a6815d92958" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://jira-dsc.apac.bg.corpintra.net/secure/Dashboard.jspa" CvTextArgument="18" CvType="Text" DesignTimeRectangle="1801, 553, 20, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'18'" FullSelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' tableRow='*' tag='A' innertext='*' idx='20' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' type='' tag='A' innertext='*' class='' check:text='18' /&gt;" Guid="4bd634b1-708b-4464-9f34-b5a179ba3f11" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADYSURBVEhL7ZQxDoMwDADzQ6Q+hpVXMPMEfsCOVImFgSkSEy/I7CYqkW1wEpVQVZUy3GI7OjsxKGMMfJMiSFIESX4p0NA8nqAszRjPe6p+O9UJgg26mh88CcaZ5RmtZrVcsC5QCYe4gDYww7DHh9bHJuhWrJcFtgvdT/uBiIB2S6ai9cE3CAtotzgB1mPMcUkgvdMbfj2OiwKeR3j3jswr8jm6srFHJgQFZNP43qOExj8XBLaFTUG2K2sCVS+ghfq8CQ65M7esqUX66g+/CUdQcBdFkOTfBQZelOMHzxvvY9oAAAAASUVORK5CYII=" InformativeScreenshot="a0ec5da8caa41dc3c39cf182a60ddbaf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='23A Release_CR_Bugs - Jira' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable BrowserURL="https://jira-dsc.apac.bg.corpintra.net/secure/Dashboard.jspa" CvTextArgument="18" CvType="Text" DesignTimeRectangle="1809, 553, 20, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'18'" FullSelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' tableRow='5' tag='A' innertext='*' idx='6' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' type='' tag='A' innertext='*' class='' check:text='18' /&gt;" Guid="60d26f50-3720-42ff-a99c-9ec005b13ee4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADYSURBVEhL7ZQxDoMwDADzQ6Q+hpVXMPMEfsCOVImFgSkSEy/I7CYqkW1wEpVQVZUy3GI7OjsxKGMMfJMiSFIESX4p0NA8nqAszRjPe6p+O9UJgg26mh88CcaZ5RmtZrVcsC5QCYe4gDYww7DHh9bHJuhWrJcFtgvdT/uBiIB2S6ai9cE3CAtotzgB1mPMcUkgvdMbfj2OiwKeR3j3jswr8jm6srFHJgQFZNP43qOExj8XBLaFTUG2K2sCVS+ghfq8CQ65M7esqUX66g+/CUdQcBdFkOTfBQZelOMHzxvvY9oAAAAASUVORK5CYII=" InformativeScreenshot="567d60c74a73630bb6884750e2c20bfd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='23A Release_CR_Bugs - Jira' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                            <uix:Target CvTextArgument="Status" CvType="Text" DesignTimeRectangle="1219, 611, 48, 17" ElementType="Text" FriendlyName="'Status'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvTextArgument="Status" CvType="Text" DesignTimeRectangle="1219, 611, 48, 16" ElementType="Text" FriendlyName="'Status'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                             <uix:Target CvTextArgument="23ARelease_Bugs_Netsol" CvType="Text" DesignTimeRectangle="1344, 307, 175, 18" ElementType="Text" FriendlyName="'23ARelease_Bugs_Netsol'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -271,10 +272,10 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '18'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9c97cb13-6629-4d83-b733-0a6815d92958" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://jira-dsc.apac.bg.corpintra.net/secure/Dashboard.jspa" CvTextArgument="18" CvType="Text" DesignTimeRectangle="1801, 553, 20, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'18'" FullSelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' tableRow='*' tag='A' innertext='*' idx='20' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' type='' tag='A' innertext='*' class='' check:text='18' /&gt;" Guid="4bd634b1-708b-4464-9f34-b5a179ba3f11" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADYSURBVEhL7ZQxDoMwDADzQ6Q+hpVXMPMEfsCOVImFgSkSEy/I7CYqkW1wEpVQVZUy3GI7OjsxKGMMfJMiSFIESX4p0NA8nqAszRjPe6p+O9UJgg26mh88CcaZ5RmtZrVcsC5QCYe4gDYww7DHh9bHJuhWrJcFtgvdT/uBiIB2S6ai9cE3CAtotzgB1mPMcUkgvdMbfj2OiwKeR3j3jswr8jm6srFHJgQFZNP43qOExj8XBLaFTUG2K2sCVS+ghfq8CQ65M7esqUX66g+/CUdQcBdFkOTfBQZelOMHzxvvY9oAAAAASUVORK5CYII=" InformativeScreenshot="a0ec5da8caa41dc3c39cf182a60ddbaf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='23A Release_CR_Bugs - Jira' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable BrowserURL="https://jira-dsc.apac.bg.corpintra.net/secure/Dashboard.jspa" CvTextArgument="18" CvType="Text" DesignTimeRectangle="1809, 553, 20, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'18'" FullSelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' tableRow='5' tag='A' innertext='*' idx='6' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='gadget-23754' tag='TABLE' /&gt;&lt;webctrl aaname='*' type='' tag='A' innertext='*' class='' check:text='18' /&gt;" Guid="60d26f50-3720-42ff-a99c-9ec005b13ee4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADYSURBVEhL7ZQxDoMwDADzQ6Q+hpVXMPMEfsCOVImFgSkSEy/I7CYqkW1wEpVQVZUy3GI7OjsxKGMMfJMiSFIESX4p0NA8nqAszRjPe6p+O9UJgg26mh88CcaZ5RmtZrVcsC5QCYe4gDYww7DHh9bHJuhWrJcFtgvdT/uBiIB2S6ai9cE3CAtotzgB1mPMcUkgvdMbfj2OiwKeR3j3jswr8jm6srFHJgQFZNP43qOExj8XBLaFTUG2K2sCVS+ghfq8CQ65M7esqUX66g+/CUdQcBdFkOTfBQZelOMHzxvvY9oAAAAASUVORK5CYII=" InformativeScreenshot="567d60c74a73630bb6884750e2c20bfd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='23A Release_CR_Bugs - Jira' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                            <uix:Target CvTextArgument="Status" CvType="Text" DesignTimeRectangle="1219, 611, 48, 17" ElementType="Text" FriendlyName="'Status'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            <uix:Target CvTextArgument="Status" CvType="Text" DesignTimeRectangle="1219, 611, 48, 16" ElementType="Text" FriendlyName="'Status'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                             <uix:Target CvTextArgument="23ARelease_Bugs_Netsol" CvType="Text" DesignTimeRectangle="1344, 307, 175, 18" ElementType="Text" FriendlyName="'23ARelease_Bugs_Netsol'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
