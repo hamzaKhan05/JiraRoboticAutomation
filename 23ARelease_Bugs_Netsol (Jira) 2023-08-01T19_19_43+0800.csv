@@ -1,0 +1,900 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Component/s,Component/s,Due Date,Votes,Labels,Labels,Labels,Labels,Labels,Description,Environment,Watchers,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Outward issue link (Blocks),Inward issue link (Bugs detected),Inward issue link (Bugs detected),Inward issue link (Bugs detected),Inward issue link (Bugs detected),Inward issue link (Bugs detected),Inward issue link (Bugs detected),Outward issue link (Bugs detected),Inward issue link (Cloners),Outward issue link (Cloners),Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Custom field (Acceptance Criteria(s)),Custom field (Acceptance criteria),Custom field (Accounting Date),Custom field (Accounting User Signature),Custom field (Accounting-Compliant with C174),Custom field (Accounting-Payment Term reviewed),Custom field (All Required Sign-Off Approvals obtained),Custom field (Amount),Custom field (Anti-Bribery Clause),Custom field (App-relevant),Custom field (Application),Custom field (Application Number),Custom field (Approved by Contract Owner),Custom field (Auditing Clause),Custom field (Automation Status),Custom field (BU Level 2),Custom field (Bug Type),Custom field (Business Requirement Document),Custom field (Business value),Custom field (C4D),Custom field (CISM Date),Custom field (CISM Status),Custom field (CISM Ticket),Custom field (CMS -Other Department),Custom field (CMS-Further Comments),Custom field (CMS-Further Comments Date),Custom field (CMS-Further Comments User Signature),Custom field (COP_CR_REASON),Custom field (COP_CR_RESOURCES),Custom field (COP_CR_RETURN),Custom field (COP_CR_RISKS),Custom field (COP_ENV),Custom field (COP_Market),Custom field (CSS Epic Type),Custom field (CSS Test Environment),Custom field (CSS_PI),Custom field (CSS_PRJ_Phase),Custom field (CSS_Remark),Custom field (Category),Custom field (Category+),Custom field (Change Type),Custom field (Change completion date),Custom field (Change of Control Clause),Custom field (Change reason),Custom field (Change risk),Custom field (Change start date),Custom field (Change type),Custom field (Child Labor Clause),Custom field (Company Name),Custom field (Company No),Custom field (Compliance Date),Custom field (Compliance User Signature),Custom field (Component Type),Custom field (Confidentiality Clause),Custom field (Cont Status),Custom field (Contract Baseline),Custom field (Contract Date),Custom field (Contract Expiry Date),Custom field (Contract No),Custom field (Contract Number),Custom field (Contract Owner),Custom field (Contract Owner Department),Custom field (Contract Owner Extension),Custom field (Contract Owner Signature),Custom field (Contract Party),Custom field (Contract Party on Critical-Account List),Custom field (Contract Relations),Custom field (Contract Start Date),Custom field (Contract Status),Custom field (Contract Storage Place),Custom field (Contract Title),Custom field (Contract Type),Custom field (Contract Value),Custom field (Contractor Type),Custom field (Controlling - Comments :),Custom field (Controlling Date),Custom field (Controlling User Signature),Custom field (Controlling-Budget available/within the allocated budget:),Custom field (Country),Custom field (Currency),Customer Request Type,Custom field (Cycle),Custom field (DQM Mandatory),Custom field (DSC Application),Custom field (Data Processing on Behalf),Custom field (Data Protection Clause),Custom field (Date of Application),Custom field (Dealer's Name),Custom field (Defect Classification),Custom field (Defect Resolution),Custom field (Defect Type),Custom field (Department),Custom field (Department+),Custom field (Deployment Date/Time),Custom field (Designation),Custom field (Developer Responsible),Custom field (Due Date),Custom field (Effective Period From),Custom field (Effective Period To),Custom field (Email),Custom field (Entity Name),Custom field (Env),Custom field (Environment),Custom field (Epic Link),Custom field (Estimate Solve Date),Custom field (Example value),Custom field (Executed by-Date),Custom field (Executed by-Name),Custom field (Executed by-Sign),Custom field (Expected Delivery Date),Custom field (Expected Result),Custom field (External issue ID),Custom field (F&I Setup Dealer's Name),Custom field (FS Number),Custom field (Filing),Custom field (Filing Date),Custom field (Filing User Signature),Custom field (Firstname),Custom field (Fix By),Custom field (Fix Deployment Date),Custom field (Fix Version),Custom field (Fix Version_JP),Custom field (Fixed Value Description),Custom field (Fixed Values),Custom field (Fixed by Patch),Custom field (Full Name),Custom field (Function),Custom field (Function),Custom field (Function),Custom field (Functional Specification),Custom field (Group),Custom field (HP No),Custom field (Hardware Request),Custom field (Head of Department -Date),Custom field (Head of Department -Name),Custom field (Head of Department -Sign),Custom field (IC No),Custom field (IPS),Custom field (IT Manager-Date),Custom field (IT Manager-Name),Custom field (IT Manager-Sign),Custom field (IT Request Type),Custom field (ITF),"Custom field (If also Electronic Copy, indicate Storage Place)",Custom field (Impact),Custom field (Impediment Description),Custom field (Impediment Summary),Incident Turnaround time,Incident Turnaround time simplified,Custom field (Instance),Custom field (Int Description),Custom field (Investigation reason),Custom field (Issue ID),Custom field (Job Size [Y]),"Custom field (Job-Size (S, M, L, XL, XXL))",Custom field (Justification/Quantification),Custom field (Lastname),Custom field (Legal Approved Contract/ Contract Type),Custom field (Legal Date),Custom field (Legal Type),Custom field (Legal User Extension),Custom field (Legal User Signature),Custom field (Linked major incidents),Custom field (Local IT evaluation),Custom field (Location),Custom field (Main Content/Purpose),Custom field (Mandays estimate),Custom field (Maturity Date),Custom field (Mercedes Me App),Custom field (MoSCoW),Custom field (Mutual Contract with Sales Partner),Custom field (Name),Custom field (Name of employee submitting the Sign-Off Sheet),Custom field (Name of the Department),Custom field (Number of Pages),Custom field (Operational categorization),Custom field (Original story points),Custom field (Other Department - Date),Custom field (Other Department - User Signature),Custom field (Others),Custom field (PEGA Assignee Group),Custom field (PI),Custom field (PO Number),Custom field (PR Description),Custom field (PR Focus Scope),Custom field (PR Number INT),Custom field (PR Number PROD),Custom field (PR Number UAT),Custom field (PR Request Number),Custom field (PR Total Cost (exclude tax/GST)),Custom field (PRD Date),Custom field (Parent Link),Custom field (Payment Term),Custom field (Pega Estimate End Date),Custom field (Pega Start Date),Custom field (Pending reason),Custom field (Person required to resolve),Custom field (Phone),Custom field (Position),Custom field (Priority),Custom field (Privacy Clause),Product Incident time,Product Incident time simplified,Custom field (Product categorization),Custom field (ProjCat),Custom field (Project Description),Custom field (Project Name),Custom field (Pull Request),Custom field (RMW Related),Custom field (RO Priority),Custom field (Rank),Custom field (Related Issues),Custom field (Relevant Tax clause included),Custom field (Request Classification),Custom field (Request participants),Custom field (Requestor Approval Date),Custom field (Requestor Approval Name),Custom field (Requestor Approval Sign),Response Time,Response Time simplified,Custom field (Review Date),Custom field (Risk Management),Custom field (Risk Reduction [X]),Custom field (Root Cause),Custom field (Root Cause Analysis),Custom field (Root Cause+),Custom field (Root cause),Custom field (SNOW Ticket),Custom field (Salesperson/Dealer Email),Custom field (Salesperson/Dealer HP/Phone No),Custom field (Salesperson/Dealer IC No),Custom field (Salesperson/Dealer Name),Satisfaction score (out of 5),Custom field (Screen),Custom field (Server Address for deployment),Custom field (Service Fix Applied To),Custom field (Share with),Custom field (Signing Contract Date),Custom field (Signing Contract-User Signature),Custom field (Signing of Agreement in accordance with Bill of Authority of the respective entity),Custom field (Signing of Contract By Contract Owner),Custom field (Software Request),Custom field (Solved Date),Custom field (Source),Custom field (Source Field),Custom field (Source System),Custom field (Source Table),Custom field (Start Date),Custom field (State Backup Plan),Custom field (State Deployment Dependency),Custom field (Story Points),Custom field (Supervisor),Custom field (Sustainability Clause),Custom field (System Dependency),Custom field (System Mandatory),Custom field (System and Env),Custom field (Target end),Custom field (Target start),Custom field (Tax Clause),Custom field (Tax Date),Custom field (Tax User Signature),Custom field (Tax-Tax Implication checked on potential tax risk to the company),Custom field (Team),Custom field (Team Name),Custom field (Temp-JIRA-ID),Custom field (TempTobeDeleted),Custom field (Template),Custom field (Test Case),Custom field (Test Data),Custom field (Test Scenario),Custom field (Test Step),Custom field (Testing Cycle),Custom field (Ticket Number),Time to approve normal change,Time to approve normal change simplified,Time to close after resolution,Time to close after resolution simplified,Time to first response,Time to first response simplified,Time to resolution,Time to resolution simplified,Custom field (Total Contract Value),Custom field (Trading Name),Custom field (Transformation Logic),Custom field (UAT Date(ETD)),Custom field (UAT Deployment Status),Custom field (Urgency),Custom field (Urgency [X]),Custom field (User ID),Custom field (Userid),Custom field (VDZ_Answering Time),Custom field (VDZ_Assignee),Custom field (VDZ_BINT),Custom field (VDZ_Complexity estimation),Custom field (VDZ_Creator),Custom field (VDZ_Dependencies),Custom field (VDZ_Development),Custom field (VDZ_E2E),Custom field (VDZ_Epic Link),Custom field (VDZ_Epic Name),Custom field (VDZ_Epic Status),Custom field (VDZ_Functional Design),Custom field (VDZ_Issue Type),Custom field (VDZ_Key),Custom field (VDZ_Linked Issues),Custom field (VDZ_Logic Tree),Custom field (VDZ_MBVM IT Description),Custom field (VDZ_Market),Custom field (VDZ_PROD Verified),Custom field (VDZ_Priority),Custom field (VDZ_Remarks),Custom field (VDZ_Reporter),Custom field (VDZ_Resolution),Custom field (VDZ_Responsible Subproject),Custom field (VDZ_Responsible Subproject_2),Custom field (VDZ_Sprint),Custom field (VDZ_Status),Custom field (VDZ_Sub-Tasks),Custom field (VDZ_TINT),Custom field (VDZ_Technical Design),Custom field (VDZ_Time to first response),Custom field (VDZ_Time to resolution),Custom field (Value [X]),Custom field (WSJF ( X/Y)),Custom field (Wet Ink),Custom field (Workaround),Custom field (Workaround+),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+Bank balance boxes missing in POS application Tab 'Bank',ASDTM-11511,303191,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,,NETSMTH,DIPKONG,DIPKONG,01/Aug/23 6:01 PM,01/Aug/23 6:23 PM,01/Aug/23 7:19 PM,01/Aug/23 6:01 PM,POS,,,0,23ARelease,,,,,"Bank balance boxes missing in POS application Tab 'Bank'
+
+Bank balance couldn't be input in new app, neither the existing app could show bank balances input.
+
+ ",,,,,,,,,,,,,,ASDTM-11444,ASDTM-8505,ASDTM-8512,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HK,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v12i:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"01/Aug/23 6:23 PM;CLAXMAN;Hi [~NETSMTH] 
+
+Please look into this issue.
+
+[~ANANDAD] [~GANESIV] ;;;",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Contract number wrongly capturing at receipting for the payment Direct Debit,ASDTM-11507,303118,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,RAJESHC,RAJESHC,31/Jul/23 3:48 PM,01/Aug/23 12:01 PM,01/Aug/23 3:23 PM,31/Jul/23 3:48 PM,Accounting,CMS [System],,0,23ARelease,accounting,BO010823,cms,NSBO,"Hi Team,
+
+ 
+
+We are facing this issue suddenly. Erroneous contract numbers are getting captured at receipting in BANK GL for the payment mode Direct receipts.
+
+ 
+
+Many contracts are affected due to this issue. Please find attached affected contract list and requesting your immediate support
+
+ 
+
+ ",,,,,,,,,,,,,,,,,ASDTM-9893,,,,,,,,,"31/Jul/23 3:48 PM;RAJESHC;Contract number wrongly capturing at receipting for the payment Direct Debit.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309665/Contract+number+wrongly+capturing+at+receipting+for+the+payment+Direct+Debit.xlsx",,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,Accounting,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,,,23ARelease,accounting,cms,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0mq:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CMS-WFS Model D I Netting-off Incorrect Behaviour,ASDTM-11506,303117,Bug,IN DEV,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,,NETSMTH,HIMAZAM,HIMAZAM,31/Jul/23 2:51 PM,01/Aug/23 3:18 PM,01/Aug/23 7:18 PM,31/Jul/23 2:51 PM,,,,0,23ARelease,NSBO,RotF,ROTF-Project,,"Contract No: 40142584 & 40142593
+
+Netting off was successful which is incorrect behavior for Model D as contract activation has been performed with the ROTF checkbox ticked
+
+ 
+
+!image-2023-07-31-14-50-30-832.png!
+
+ 
+
+!image-2023-07-31-14-51-00-839.png!
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ ",,,,,,,,,,,,,,,,,,,,,,,,,,"31/Jul/23 2:50 PM;HIMAZAM;image-2023-07-31-14-50-30-832.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309625/image-2023-07-31-14-50-30-832.png","31/Jul/23 2:51 PM;HIMAZAM;image-2023-07-31-14-51-00-839.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309624/image-2023-07-31-14-51-00-839.png",,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0mi:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CMS-WFS Model B I Netting off unable no receipt cancelled upon Flat Cancel contract,ASDTM-11505,303114,Bug,QA,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,,NETSMTH,HIMAZAM,HIMAZAM,31/Jul/23 2:40 PM,01/Aug/23 3:18 PM,01/Aug/23 6:24 PM,31/Jul/23 2:40 PM,,,,0,23ARelease,NSBO,RotF,ROTF-Project,,"Contract No: 10142597
+
+Contract was flat cancelled but WFS receipt is still not cancelled.
+
+No record reflected in WFS Netting-Off log despite 'Current' unit status. 
+
+ 
+
+!image-2023-07-31-14-38-51-027.png!",,,,,,,,,,,,,,,,,,,,,,,,,,"31/Jul/23 2:38 PM;HIMAZAM;image-2023-07-31-14-38-51-027.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309609/image-2023-07-31-14-38-51-027.png",,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0lu:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mobile Number update issue,ASDTM-11504,303110,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,SIDDHS,SIDDHS,31/Jul/23 12:05 PM,31/Jul/23 12:33 PM,31/Jul/23 3:34 PM,31/Jul/23 12:05 PM,,,,0,23ARelease,BO310723,NSBO,,,"In newly activated contract, the mobile number is not marked as Default.
+
+Only if the mobile number is marked as default BU will be able to do the simulated login in COS portal.
+
+While we tried to map the mobile number as default - CMS is throwing error ( refer the attached email with screenshot).
+
+Almost 70+ address are updated against each contract.
+
+Contract Number :
+|*Contract No*|
+|10155063|
+|10155064|
+|10155065|
+|10155066|
+|10155067|
+|10155068|
+|10155069|
+|10155070|
+|10155071|
+|10155072|
+|10155073|",,,,,,,,,,,,,,,,,ASDTM-10188,ASDTM-10186,ASDTM-11322,ASDTM-11307,,,,,,"31/Jul/23 12:02 PM;SIDDHS;RE_ 23 A SOA and COS test cases.msg;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309562/RE_+23+A+SOA+and+COS+test+cases.msg",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0ky:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Remarketing related accounting entries are not generated,ASDTM-11503,303090,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,RAJESHC,RAJESHC,29/Jul/23 12:00 AM,31/Jul/23 12:35 PM,31/Jul/23 3:35 PM,29/Jul/23 12:00 AM,Accounting,CMS [System],,0,23ARelease,accounting,BO310723,cms,NSBO,"Hi Team,
+
+We have executed few remarketing cases in FMO on 27th Jun. But remarketing entries are not generated except sale proceed receipt for these contracts. 
+
+ 
+
+Attached SAP file generated for 27th Jun for your ready ref. 
+
+ 
+
+Test cases
+
+ 
+|*Key*|*Main Event*|*Summary*|*Remarks*|
+|ASDTM-9970|Remarketing|Remarketing : Loss on Remarketing|10138759|
+|ASDTM-9969|Remarketing|Remarketing : Gain on Remarketing|10155066|
+|ASDTM-9968|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_Sale value less than INR 10 Lakhs|20148096|
+|ASDTM-9967|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_Sale value exceeds INR 10 Lakhs|10155066|
+|ASDTM-9966|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_Asset returned|Aborted|
+|ASDTM-9965|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_Asset repossessed.|Aborted|
+|ASDTM-9964|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_With SD adjustment|10138759/10155066|
+|ASDTM-9963|Remarketing|Remarketing : Receivables from remarketing (by Finance Company)_Without SD adjustment|20148096|",,,,,,,,,,,,,,,,,ASDTM-9970,ASDTM-9969,ASDTM-9967,ASDTM-9964,ASDTM-9963,ASDTM-9968,,,,"28/Jul/23 11:56 PM;RAJESHC;121CMS2307271955.xml;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309496/121CMS2307271955.xml",,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,Accounting,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,,,23ARelease,accounting,cms,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0gi:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Waiting for approval,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+During Restructure of TDS contract in NEW mock RPS TDS amount is not correct in PDF format,ASDTM-11502,303088,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,,NETSMTH,JTRIPAT,JTRIPAT,28/Jul/23 8:33 PM,31/Jul/23 12:36 PM,31/Jul/23 3:08 PM,28/Jul/23 8:33 PM,CMS [System],,,0,23ARelease,BO310723,NSBO,,,"Dear Team,
+
+During Restructure of TDS contract  activated in 2022 , in NEW mock RPS TDS amount is not correct in PDF format
+
+Sample cn- 10152932.
+
+in excel it is showing correct values but in PDF it is having wrong amount.",,,,,,,,,,,,,,,,,,,,,,,,,,"28/Jul/23 8:32 PM;JTRIPAT;10152932 mock RPS.pdf;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309475/10152932+mock+RPS.pdf",,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23a release,,,,,,CMS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0v0g2:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CMS-SAP Model D I VAN is not reflected in OTV Bank Account column,ASDTM-11498,303002,Bug,QA,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,GEORGEJ,GEORGEJ,27/Jul/23 5:57 PM,01/Aug/23 2:14 PM,01/Aug/23 5:47 PM,27/Jul/23 5:57 PM,,,,0,23ARelease,NBSO,RotF,ROTF-Project,,Virtual Account Number should be in Column X the OTV Bank Account column as mentioned in the accounting sheet.,,,,,,,,,,,,,,,,,,,,,,,,,,"31/Jul/23 3:19 PM;AMOHDIM;111CMS2307262147.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309651/111CMS2307262147.xlsx","27/Jul/23 5:56 PM;GEORGEJ;ROTF CMS HP_Accounting Book_MY_20230329.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309116/ROTF+CMS+HP_Accounting+Book_MY_20230329.xlsx","27/Jul/23 8:04 PM;GEORGEJ;ROTF CMS HP_Accounting Book_MY_20230727.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309135/ROTF+CMS+HP_Accounting+Book_MY_20230727.xlsx","27/Jul/23 8:04 PM;GEORGEJ;ROTF CMS OL_Accounting Book_MY_20230727.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309136/ROTF+CMS+OL_Accounting+Book_MY_20230727.xlsx",,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,UAT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uzx6:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CMS-SAP Model D I Payable Charges with wrong Manufacturer (MBMY) AP Code,ASDTM-11497,303001,Bug,IN DEV,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,GEORGEJ,GEORGEJ,27/Jul/23 5:52 PM,01/Aug/23 10:14 AM,01/Aug/23 6:24 PM,27/Jul/23 5:52 PM,,,,0,23ARelease,NSBO,RotF,ROTF-Project,,"Registration Fee and other charges for Model D contracts should be disbursed to Manufacturer (MBMY) but the AP Code is wrong. Please find the updated accounting sheet.
+
+Contract No: 40142574
+
+Contract No: 10142578",,,,,,,,,,,,,,,,,,,,,,,,,,"31/Jul/23 3:19 PM;AMOHDIM;111CMS2307262147.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309652/111CMS2307262147.xlsx","27/Jul/23 5:51 PM;GEORGEJ;ROTF CMS HP_Accounting Book_MY_20230329.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309114/ROTF+CMS+HP_Accounting+Book_MY_20230329.xlsx","27/Jul/23 8:04 PM;GEORGEJ;ROTF CMS HP_Accounting Book_MY_20230727.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309137/ROTF+CMS+HP_Accounting+Book_MY_20230727.xlsx","27/Jul/23 8:04 PM;GEORGEJ;ROTF CMS OL_Accounting Book_MY_20230727.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309138/ROTF+CMS+OL_Accounting+Book_MY_20230727.xlsx","01/Aug/23 10:14 AM;AMOHDIM;SAP File 31072023.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309819/SAP+File+31072023.xlsx","27/Jul/23 5:51 PM;GEORGEJ;image-2023-07-27-13-51-31-382.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309112/image-2023-07-27-13-51-31-382.png","27/Jul/23 5:51 PM;GEORGEJ;image-2023-07-27-13-52-51-516.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309113/image-2023-07-27-13-52-51-516.png",,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,UAT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uzwy:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"01/Aug/23 10:14 AM;AMOHDIM;*Retest case is with wrong AP Code Registration Fee for Model B case should be dealer and Model D should be MBMY.*
+
+Please find the SAP file.
+
+Contract No for Model B: 10142577
+
+Contract No for Model D: 40142584 and 40142593;;;",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MY POS-CMS: Installment Amount changing to 0 or round up when no rounding is required,ASDTM-11496,302996,Bug,IN DEV,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,GEORGEJ,GEORGEJ,27/Jul/23 4:11 PM,31/Jul/23 5:33 PM,01/Aug/23 4:33 PM,27/Jul/23 4:11 PM,,,,0,23ARelease,NSBO,RotF,ROTF-Project,,"The Installment amount in the CMS round up. Product level rounding is removed then rental amount is changing to 0 in CMS upon pressing calculate button.
+
+We tried truncate and different rounding options at FP level but either rental is rounded off or turned to 0.
+
+Further why rounding is only applicable on CMS, POS and CAP there is no rounding respite rounding template.
+
+The cases is for model B
+
+Contract number 30142570
+
+---------------------------------------------------------------------------------------------------
+
+The Installment amount in the CMS round up. It isn't supposed to do that. 
+
+The cases is for model D
+
+Contract number 30142576 and 30142570",,,,,,,,,,,,,,,,,,,,,,,,,,"27/Jul/23 4:01 PM;GEORGEJ;MicrosoftTeams-image (1) (1).png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309079/MicrosoftTeams-image+%281%29+%281%29.png","27/Jul/23 4:01 PM;GEORGEJ;MicrosoftTeams-image (2).png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309080/MicrosoftTeams-image+%282%29.png","27/Jul/23 4:01 PM;GEORGEJ;image-2023-07-26-17-09-29-337.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309081/image-2023-07-26-17-09-29-337.png","27/Jul/23 4:01 PM;GEORGEJ;image-2023-07-26-17-11-37-860 (1).png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309082/image-2023-07-26-17-11-37-860+%281%29.png",,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,UAT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uzvu:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FMO slowness - CSI and Task Queue Retail,ASDTM-11463,302609,Bug,Reopened,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,NKAKARL,NKAKARL,19/Jul/23 5:41 PM,31/Jul/23 3:31 PM,01/Aug/23 7:19 PM,,CMS [System],,,0,23ARelease,BO190723,NSBO,,,"Currently Market is facing slowness in FMO on below CMS screen/page
+ * *Customer Service* – Netsol agreed to deliver the permanent fix in upcoming hotfix (CSI Slowness issue frequently reported in CMO as well, as a work around from Netsol we were running the rebuild index script for CSI related tables)
+ * *Task Queue Retail* – This issue already Escalated to Netsol team, awaiting for the update (As confirmed from Market this page is taking more time in FMO(2 min. 30 Sec) compare to CMO(1 Min) application)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,04.21.03.48_HFX_18,,,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uxnm:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"26/Jul/23 2:08 AM;RELEASN;This item is part of the shipment for NFS Ascent MB FSI Patch 48 HFX_18 (04.21.03.48 HFX_18).
+
+[~NKAKARL];;;","27/Jul/23 1:52 PM;NKAKARL;[~MTRIBHU] 
+
+Fix for FMO slowness issue is delivered in HF 18 and deployed on FMO PROD, Please verify it and provide the feedback ASAP.;;;","31/Jul/23 3:31 PM;MTRIBHU;Hi Netsol,
+
+Still we are facing slowness issue in FMO, 
+
+Task queue - 4mints to Open
+
+Customer Services - 5.00mints to Open
+
+Please check and fix
+
+ ;;;",,,,,,,,,,,,,,,,,,,,,,,,,,
+Contract status is redemption expired however not able to push to queue for sale receipt,ASDTM-11458,302594,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,ARAIKAR,ARAIKAR,19/Jul/23 2:34 PM,01/Aug/23 12:39 PM,31/Jul/23 3:34 PM,,CMS [System],,,0,23ARelease,BO190723,NSBO,,,Contract status is redemption expired however not able to push to queue for sale receipt,,,,,,,,,,,,,,,,,ASDTM-10141,,,,,,ASDTM-10154,,,"25/Jul/23 8:24 PM;RELEASN;8.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308516/8.png","25/Jul/23 8:24 PM;RELEASN;9.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308517/9.png","19/Jul/23 2:33 PM;ARAIKAR;Contract status is redemption expired however not able to push to queue for sale receipt.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/307140/Contract+status+is+redemption+expired+however+not+able+to+push+to+queue+for+sale+receipt.xlsx","26/Jul/23 6:03 PM;ARAIKAR;image-2023-07-26-15-33-31-709.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308788/image-2023-07-26-15-33-31-709.png","26/Jul/23 6:03 PM;ARAIKAR;image-2023-07-26-15-33-55-096.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308789/image-2023-07-26-15-33-55-096.png","26/Jul/23 6:04 PM;ARAIKAR;image-2023-07-26-15-34-07-678.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308790/image-2023-07-26-15-34-07-678.png","26/Jul/23 6:04 PM;ARAIKAR;image-2023-07-26-15-34-36-248.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308791/image-2023-07-26-15-34-36-248.png",,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uxka:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"25/Jul/23 8:30 PM;RELEASN;[~ARAIKAR] 
+
+ 
+
+We performed below mentioned step and issue is not reproducing at NETSOL side. please share a GTM session if you still facing the issue.
+
+*Steps performed:*
+
+Generate repossession request
+
+Mark request repossessed ,Enter days for auto redemption expire .
+
+Execute redemption expiry day end, on expiry date.
+
+Verify asset on remarketing screen.
+
+ 
+
+!8.png|width=937,height=335!
+
+ 
+
+!9.png|width=945,height=276!;;;","26/Jul/23 4:43 PM;NKAKARL;[~ARAIKAR] 
+
+This can be closed as redemption expired contracts are available in remarketing queue to push...;;;","26/Jul/23 6:05 PM;ARAIKAR;Tested 2 more sample contract that are moved to redemption expired however not available in ASSET REGISTER to push to remkting queue.
+
+!image-2023-07-26-15-33-55-096.png|width=544,height=223!
+
+!image-2023-07-26-15-34-07-678.png|width=451,height=190!
+
+!image-2023-07-26-15-33-31-709.png|width=457,height=257!
+
+!image-2023-07-26-15-34-36-248.png|width=540,height=304!;;;","26/Jul/23 6:29 PM;RELEASN;[~NKAKARL]  [~ARAIKAR]  [~GANESIV] 
+
+why this issue is reopened although none of the fix is provided by Netsol? It is marked as resolved by BU. Kindly check it and mark the transition accordingly. 
+
+ 
+
+Thank You. 
+
+ ;;;","27/Jul/23 5:57 PM;NKAKARL;[~NETSMTH] 
+
+It is changed to Open now.... Please proceed and provide the appropriate fixation.;;;","01/Aug/23 12:39 PM;NKAKARL;[~NETSMTH] 
+
+Please prioritize this issue as remarketing test cases are blocked due to this.
+
+ 
+
+[~GANESIV] ;;;",,,,,,,,,,,,,,,,,,,,,,,
+Format is in disorder,ASDTM-11443,302521,Bug,IN DEV,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,,NETSMTH,DIPKONG,DIPKONG,18/Jul/23 3:07 PM,31/Jul/23 8:35 PM,01/Aug/23 2:16 PM,18/Jul/23 3:07 PM,POS,,,0,23ARelease,NSBO,,,,,,NETSMTH,,,,,,,,,ASDTM-8517,ASDTM-8505,ASDTM-8516,ASDTM-8512,,,,,,,,,,,,"18/Jul/23 3:06 PM;DIPKONG;Company Borrower - bank.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306813/Company+Borrower+-+bank.png","18/Jul/23 3:25 PM;ALLALAM;Company Guarantor- bank.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306830/Company+Guarantor-+bank.png","18/Jul/23 3:25 PM;ALLALAM;Individual Borrower - bank.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306831/Individual+Borrower+-+bank.png","18/Jul/23 3:25 PM;ALLALAM;IndividualGuarantor- bank.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306832/IndividualGuarantor-+bank.png",,,,,,,,,,,,,,,,,,,,,,POS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,HK,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,POS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0ux4i:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"18/Jul/23 3:26 PM;ALLALAM;[~CLAXMAN] 
+
+Hi Chaithra,
+
+Please check with NetSol that the format in FMO POS are different with CMO which is hard to see the details in POS.;;;","18/Jul/23 4:46 PM;CLAXMAN;Hi [~NETSMTH] 
+
+Please look into the issue.
+
+[~ANANDAD] [~GANESIV] ;;;","19/Jul/23 1:47 PM;NETSMTH;[~CLAXMAN]  Kindly execute the below mentioned query in business DB on the environment which this issue occurs and share the result in excel 
+
+SELECT *
+            FROM    dbo.UI_CTRL_TRCK_WEB
+            WHERE   SCRN_ID = 2392
+                    AND WEB_APP_ID = 20
+                    AND SUB_TNNT_ID = 1
+
+[~GANESIV] [~ANANDAD] ;;;","19/Jul/23 5:31 PM;CLAXMAN;Hi [~NETSMTH] 
+
+Query result has been shared over email.
+
+[~ANANDAD] [~GANESIV] ;;;","31/Jul/23 8:35 PM;NETSMTH;[~CLAXMAN]  this issue takes time it is pending from framework team so may or may not be include in Wednesday Hotfix so [~GANESIV]  could you please drop an email to arshad regarding this issue so he will give you the ETL on this ticket 
+
+[~ANANDAD] ;;;",,,,,,,,,,,,,,,,,,,,,,,,
+Article closing - PUC - ASDTM-10075,ASDTM-11429,302419,Bug,Reopened,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,SVAIKUN,SVAIKUN,17/Jul/23 12:47 PM,01/Aug/23 7:02 PM,01/Aug/23 7:19 PM,,CMS [System],,,0,23ARelease,BO170723,NSBO,,,"PUC not reflecting in contract at Article closure stage.
+
+Also allowing to execute the refund when contract is in payment under clearance",,,,,,,,,,,,,,,,,ASDTM-10075,ASDTM-10056,,,,,,,,"25/Jul/23 9:15 PM;RELEASN;10.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308527/10.png","17/Jul/23 12:46 PM;SVAIKUN;Article Closing - PUC.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306416/Article+Closing+-+PUC.xlsx","21/Jul/23 3:28 PM;RELEASN;screenshot-1.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/307812/screenshot-1.png","21/Jul/23 3:28 PM;RELEASN;screenshot-2.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/307813/screenshot-2.png","24/Jul/23 8:41 PM;SVAIKUN;screenshot-3.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308191/screenshot-3.png","24/Jul/23 8:42 PM;SVAIKUN;screenshot-4.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308192/screenshot-4.png",,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,,,Operations,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uwka:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"18/Jul/23 12:21 PM;MALIKPR;Priority moved to highest as affecting testing of other test cases;;;","21/Jul/23 3:29 PM;RELEASN;
+Hi [~SVAIKUN], 
+
+Refund request generation while contract is under clearance is same as production behavior. 
+PUC info on article closing tab is not reproducing in BO. Please find attached evidence below. 
+Kindly mention steps to reproduce if issues still exist on different contracts. 
+ !screenshot-1.png|thumbnail! 
+ !screenshot-2.png|thumbnail! 
+
+[~NKAKARL]
+
+[~NKAKARL];;;","24/Jul/23 8:36 PM;NKAKARL;[~SVAIKUN] 
+
+Request your confirmation/inputs on above NETSOL feedback.... 
+
+[~MTRIBHU] ;;;","24/Jul/23 8:42 PM;SVAIKUN;[~NETSMTH] - Still PUC is not showing in Article closure screen. Attached screenshots for your reference.
+ !screenshot-3.png|thumbnail! 
+ !screenshot-4.png|thumbnail! ;;;","25/Jul/23 9:16 PM;RELEASN; 
+
+Receipt is not displaying in PUC at Article Closing because of its 'UnAllocated' status.
+
+!10.png|width=953,height=513!;;;","01/Aug/23 6:44 PM;SVAIKUN;[~NETSMTH] As per validation most of the contracts shows PUC. Want to understand how  system will not show PUC when amount is settled against unallocated. Because unallocated amount leads to excess refund at Article closure stage. If contract doesn't show PUC which leads to incorrect refund & closure which is loss to us when there is a bounce in transaction. Also unable to open the contract# 10132719 in CSI screen for further validtion.;;;",,,,,,,,,,,,,,,,,,,,,,,
+GST line not available for processing fee at Contract Activation,ASDTM-11406,302364,Bug,Reopened,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,RAJESHC,RAJESHC,14/Jul/23 2:16 PM,31/Jul/23 4:05 PM,01/Aug/23 7:19 PM,,Accounting,CMS [System],,0,23ARelease,accounting,BO140723,cms,NSBO,"GST line not available for processing fee at Contract Activation.
+
+ 
+
+This issue we are facing only for few contracts not for all the contracts. I have shared effected contract and regular contract both are activated on same day",,,,,,,,,,,,,,,,,ASDTM-9866,,,,,,,,,"31/Jul/23 4:01 PM;MTRIBHU;ASDTM-11406_GST line not available for processing fee at Contract Activation.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309676/ASDTM-11406_GST+line+not+available+for+processing+fee+at+Contract+Activation.docx","24/Jul/23 5:34 PM;NKAKARL;DTP.2023-07-11.1.log;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308159/DTP.2023-07-11.1.log","19/Jul/23 7:53 PM;NKAKARL;DTP.2023-07-12.log;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/307307/DTP.2023-07-12.log","14/Jul/23 2:14 PM;RAJESHC;GST line not available for processing fee at Contract Activation.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306126/GST+line+not+available+for+processing+fee+at+Contract+Activation.xlsx","15/Jul/23 9:04 PM;RAMCHAN;PF Tax.PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306286/PF+Tax.PNG","20/Jul/23 6:30 PM;NKAKARL;image-2023-07-20-16-00-34-129.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/307613/image-2023-07-20-16-00-34-129.png","26/Jul/23 6:51 PM;RELEASN;image-2023-07-26-15-52-06-518.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308798/image-2023-07-26-15-52-06-518.png",,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,Accounting,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,,,23ARelease,Accouning,cms,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uw8q:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"14/Jul/23 9:04 PM;RELEASN;Issue not reproduced at Ascent End. Please share logs and CMS screenshots for further investigation.
+
+[~NKAKARL] [~RAJESHC];;;","14/Jul/23 9:14 PM;RAJESHC;[~NKAKARL] [~MTRIBHU]  Need your support for getting logs as required by Netsol. 
+
+ 
+
+Please note, this issue not happening for all the contracts. Few contracts having this issue. Out of 8 contracts activated yesterday, we are having this issue for two contracts and it will create very big issue in the govt. payments. Netsol has to test similar steps as per affected contracts to reproduce this issue
+
+ 
+
+[~RAMCHAN]  Please share processing fee screen shots as per CMS for the contracts 10155066 & 10155068
+
+ 
+
+[~MALIKPR] ;;;","15/Jul/23 9:08 PM;RAMCHAN;Hi Team Tax were checked for all contracts before activation we do understand the impact if taxes are not reflecting 
+
+Not sure why only for this contracts alone taxes are not appearing
+
+[~RAJESHC][~MALIKPR][~MTRIBHU];;;","17/Jul/23 12:02 PM;NKAKARL;[~NETSMTH] 
+
+Required information has been shared, Please proceed with further investigation and provide the feedback.;;;","17/Jul/23 1:20 PM;RELEASN;[~NKAKARL] 
+As requested, kindly share the logs for the affected contracts as already shared information is not enough to investigate the issue. 
+
+[~RAJESHC] ;;;","17/Jul/23 1:29 PM;NKAKARL;[~NETSMTH] 
+
+Which logs are required?;;;","17/Jul/23 7:26 PM;NKAKARL;[~NETSMTH] 
+
+As discussed, DTP logs are not required for this case study. Please check and advise the solution.;;;","19/Jul/23 5:23 PM;RELEASN;[~NKAKARL] 
+kindly share the logs as requested in GTM yesterday. 
+
+Thank you. ;;;","19/Jul/23 7:53 PM;NKAKARL;[~NETSMTH] 
+
+Logs are attached as required, Please check!;;;","20/Jul/23 5:28 PM;RELEASN;[~NKAKARL], the shared logs doesn't contain details on the application issue. Please share logs relevant to the issue along with required Application number as discussed in GTM.;;;","20/Jul/23 7:26 PM;NKAKARL;[~RELEASN] 
+
+As requested during GTM, we have shared DTP logs in which application *DF-A013254-000*  logs are captured and note that GST details are not captured because GST configurations are part of CMS not DTP.... 
+
+ 
+
+!image-2023-07-20-16-00-34-129.png!;;;","21/Jul/23 6:33 PM;RELEASN;[~NKAKARL]  
+
+As per discussion, Netsol require Saveapplication logs from DTP, but in screenshot shared by you, these logs are GetApplicationStatus, Kindly share the required logs.
+
+ 
+
+Thank you. 
+
+ 
+
+ ;;;","24/Jul/23 5:33 PM;NKAKARL;[~NETSMTH] 
+
+PFA the DTP save logs as requested and have assigned back the ticket.;;;","26/Jul/23 6:52 PM;RELEASN;[~NKAKARL]   [~RAJESHC] 
+
+
+Issue is not reproduced even from DTP application *DF-A013254-000* logs. Please check Processing Fee GST Tax configurations in CMS from screenshot at your end and re-test the issue.
+
+!image-2023-07-26-15-52-06-518.png|width=1204,height=534!
+
+ ;;;","31/Jul/23 4:04 PM;MTRIBHU;Hi Netsol,
+
+we checked in FMO and configuration already their, Please check screenshot in attachment ""ASDTM-11406_GST line not available for processing fee at Contract Activation"".;;;",,,,,,,,,,,,,,
+In restructure Incorrect rental plan in TDS contract and system does not through pop up msg for Payment under clearance,ASDTM-11368,301883,Bug,Reopened,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NETSMTH,ARAIKAR,ARAIKAR,06/Jul/23 9:01 PM,28/Jul/23 9:25 PM,01/Aug/23 7:19 PM,,CMS [System],,,0,23ARelease,NSBO,,,,"Incorrect rental plan in TDS contract and system does not through pop up msg for Payment under clearance 10148355
+
+10148374-Mismatch in available SD and periodic interest gets added",,,,,,,,,,,,,,,,,ASDTM-10143,ASDTM-10207,ASDTM-10144,,,,,,,"06/Jul/23 9:00 PM;ARAIKAR;In restructure Incorrect rental plan in TDS contract and system does not through pop up msg for Payment under clearance.xlsx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304382/In+restructure+Incorrect+rental+plan+in+TDS+contract+and+system+does+not+through+pop+up+msg+for+Payment+under+clearance.xlsx","24/Jul/23 5:02 PM;ARAIKAR;image-2023-07-24-14-32-11-984.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308148/image-2023-07-24-14-32-11-984.png","24/Jul/23 5:11 PM;ARAIKAR;image-2023-07-24-14-41-42-977.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308149/image-2023-07-24-14-41-42-977.png","24/Jul/23 5:28 PM;ARAIKAR;image-2023-07-24-14-58-11-693.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308154/image-2023-07-24-14-58-11-693.png","27/Jul/23 7:35 PM;ARAIKAR;image-2023-07-27-17-05-10-693.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309131/image-2023-07-27-17-05-10-693.png","28/Jul/23 7:44 PM;ARAIKAR;image-2023-07-28-17-14-45-666.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309463/image-2023-07-28-17-14-45-666.png",,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,04.21.03.48_HFX_18,,CMS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0utf6:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"22/Jul/23 12:29 AM;RELEASN;This item is shipped in 'MBFSI-Patch 04.21.03.48_hfx_17'.;;;","24/Jul/23 1:25 PM;NKAKARL;[~ARAIKAR] 
+
+Bug fix is deployed on FMO, Please retest it and provide the feedback.
+
+[~MTRIBHU] ;;;","24/Jul/23 5:32 PM;ARAIKAR;We had 3 queries in this ticket as below.
+
+1.Incorrect rental plan in TDS contract and system does not through pop up msg for Payment under clearance-Rental plan for TDS contract is still reflecting incorrect with no TAX amount and incorrect gross rental amount as below.10136975
+
+!image-2023-07-24-14-32-11-984.png|width=533,height=283!
+
+2.system does not through pop up msg for Payment under clearance-Tested one CN 90100074,system does not shows any payment under clearance msg.
+
+!image-2023-07-24-14-58-11-693.png|width=614,height=287!
+
+3.10148374 Mismatch in available SD and periodic interest gets added-{*}Kindly confirm if this scenario can also be retested in FMO.{*};;;","26/Jul/23 2:08 AM;RELEASN;This item is part of the shipment for NFS Ascent MB FSI Patch 48 HFX_18 (04.21.03.48 HFX_18).
+
+[~NKAKARL];;;","27/Jul/23 7:35 PM;ARAIKAR;TAX amount and gross rental(net off TDS) is still not working as expected even after HOTFIX18..
+
+!image-2023-07-27-17-05-10-693.png|width=678,height=346!;;;","27/Jul/23 8:31 PM;RELEASN;Hi [~ARAIKAR] 
+
+Above mentioned issue has been fixed on ticket ASDTM-11475 and will ship in upcoming hotfix 19.
+
+ 
+
+[~NKAKARL] ;;;","28/Jul/23 7:46 PM;ARAIKAR;1.Tax amount in mock Repayment plan at maker level is calculating incorrect tax amount.
+
+2.After adjusting Security deposit, period interest is reflecting in the allocation- issue is resolved now and periodic interest is not reflecting.
+
+3.In the SD screen as below the adjusted amount is reflecting ZERO,even after adjusting the SD amount during restructuring.
+
+!image-2023-07-28-17-14-45-666.png|width=408,height=303!;;;","28/Jul/23 8:30 PM;ARAIKAR;Contract 10143413 for 
+
+1.Tax amount in mock Repayment plan at maker level is calculating incorrect tax amount.
+
+2.After adjusting Security deposit, period interest is reflecting in the allocation- issue is resolved now and periodic interest is not reflecting.
+
+3.In the SD screen as below the adjusted amount is reflecting ZERO,even after adjusting the SD amount during restructuring.
+
+!image-2023-07-28-17-14-45-666.png|width=408,height=303!
+
+Please note:As per above Netsol comment it has been suggested that this ticket:ASDTM-11475 is to be opened. and ASDTM-11368 needs to be closed but we are keeping ASDTM-11368 open considering the scope of the defect which is reported above and ASDTM-11475 is closed as issue is resolved.
+
+ ;;;",,,,,,,,,,,,,,,,,,,,,
+MY : Issue with ‘Netting Off Log’. CMS sending Netting Off case to WFS when it should not happened,ASDTM-11320,301548,Bug,Resolved,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Medium,Understanding,NETSMTH,HIMAZAM,HIMAZAM,30/Jun/23 6:34 PM,01/Aug/23 7:13 PM,01/Aug/23 5:54 PM,03/Jul/23 7:11 PM,WFS,,,0,23ARelease,NSBO,NSBOWFS,,,"Referring to the Netting off log, there was a partial netting off that happened on 05/05/2023 amounting to RM60,000.00.
+
+Testing failed :
+
+- If no netting off happen on 05/05/2023, why did the CMS system send the log to the WFS system?
+
+Attached herewith the print screen for your perusal.
+
+!image-2023-06-30-18-36-13-735.png!
+
+ ",,NETSMTH,,,,,,,,,,,,,,,,,,,,,,,ASDTM-11238,"05/Jul/23 5:12 PM;KUSUMI2;RE 23A - ASDTM-11320 FMO Netting off testing.msg;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/303990/RE+23A+-+ASDTM-11320+FMO+Netting+off+testing.msg","30/Jun/23 6:36 PM;HIMAZAM;image-2023-06-30-18-36-13-735.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/303068/image-2023-06-30-18-36-13-735.png",,,,,,,,,,,,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WFS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0urga:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"30/Jun/23 6:37 PM;HIMAZAM;[~KUSUMI2] [~NETSMTH] 
+
+Netting off log triggered in WFS when there shouldnt be a netting off if the contract with the an already used VIN number already exist and Netted Off.
+
+ 
+
+[~JIANLEE] ;;;","03/Jul/23 11:38 AM;KUSUMI2;Hi [~NETSMTH]  - Please look into this issue and share the update.
+
+ 
+
+[~HIMAZAM] ;;;","03/Jul/23 7:10 PM;NETSMTH;As per attached evidence the VIN number is associated to contract # *10142554* on *05/05/2023* and netting off call is also ** done.
+
+On *01/06/2023* same VIN number is associated to *10142551* and netting off call is also done. When user activate the *10142551* contract the actual netting off is done against contract. the conflicts in amount is due to asset cost of both contracts.
+
+
+Kindly share the GTM in case of any query ;;;","03/Jul/23 7:28 PM;KUSUMI2;Hi [~HIMAZAM]  - Please refer above comment shared by Netsol team and share your feedback.;;;","05/Jul/23 5:13 PM;KUSUMI2;Hi [~NETSMTH]  - Please clarify the attached query.
+
+ 
+
+[^RE 23A - ASDTM-11320 FMO Netting off testing.msg]
+
+ 
+
+[~HIMAZAM] [~JIANLEE] ;;;","05/Jul/23 8:12 PM;NETSMTH;[~KUSUMI2]  i check the same case in production even there is no validation of chassis number even there so UAT behaviour is same as production;;;","10/Jul/23 11:04 AM;HIMAZAM;[~NETSMTH] 
+
+Are you saying the validation is not againts the Chasis number?
+
+so the same chasis number could be netted off again even in PRD?
+
+ 
+
+[~JIANLEE] [~KUSUMI2] [~ANANDAD] 
+
+ ;;;","12/Jul/23 1:31 PM;KUSUMI2;Hi [~NETSMTH]  - Please provide clarifications to the above the questions.
+
+ 
+
+[~HIMAZAM] ;;;","12/Jul/23 3:42 PM;NETSMTH;[~KUSUMI2]  as per my understanding the same behaviour in PROD so ask your user to test the same case in PROD staging environment 
+This case not being identify in Prod because in Prod user not use same VIN for more then one contract.
+[~HIMAZAM] ;;;","12/Jul/23 3:46 PM;KUSUMI2;Hi [~HIMAZAM]  - Please verify the behavior in prod and share your feedback.;;;","17/Jul/23 10:41 PM;KUSUMI2;Hi [~HIMAZAM]  - Requesting your help to update this defect.
+
+ 
+
+[~GANESIV]  [~ANANDAD] ;;;","20/Jul/23 11:57 PM;KUSUMI2;Hi [~HIMAZAM]  - Requesting your assistance to update this defect.
+
+ 
+
+[~GANESIV]  [~ANANDAD] ;;;","31/Jul/23 12:49 AM;KUSUMI2;Hi  [~HIMAZAM] Requesting you to update the status of this defect.
+
+ 
+
+[~ANANDAD]  [~GANESIV]   [~ABSRINI] ;;;","01/Aug/23 10:33 AM;HIMAZAM;[~KUSUMI2] 
+
+Please set a GTM with [~NETSMTH]  team.
+
+Further understanding on the issue is required.
+
+ 
+
+[~JIANLEE] ;;;","01/Aug/23 10:34 AM;HIMAZAM;[~NETSMTH] [~KUSUMI2] 
+
+Please also include CMS and WFS team from Netsol in the call.;;;","01/Aug/23 11:19 AM;KUSUMI2;Hi [~NETSMTH]  [~NCOMMON]  - Please share availability for GTM for further understanding on this issue.
+
+ 
+
+[~GANESIV]  [~ANANDAD]  [~HIMAZAM] ;;;","01/Aug/23 5:53 PM;NETSMTH;[~KUSUMI2]  yes you can share the GTM by 10:30 am PST by tmorrow so netsol will join and aswer your queries 
+
+[~GANESIV] [~ANANDAD] [~HIMAZAM] ;;;","01/Aug/23 5:55 PM;KUSUMI2;Hi [~NETSMTH]  - We have an another GTM at 10:30 am PST for WFS issue with Kaleem. Please share some other time slot.
+
+[~GANESIV] [~ANANDAD] [~HIMAZAM] 
+
+ ;;;",,,,,,,,,,,
+Payout contract charges not matching on all screen,ASDTM-11284,301211,Bug,QA,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,JTRIPAT,JTRIPAT,26/Jun/23 1:01 PM,01/Aug/23 5:34 PM,01/Aug/23 7:19 PM,,CMS [System],,,0,23ARelease,NSBO,,,,",check Sample contract -10106781 , charges are not matching on all screen",,,,,,,,,,,,,,,,,ASDTM-11251,,,,,,,,,"12/Jul/23 6:33 PM;JTRIPAT;10113560 .docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305673/10113560+.docx","24/Jul/23 2:33 PM;JTRIPAT;10113560 24 Jul'23.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308075/10113560+24+Jul%2723.docx","05/Jul/23 6:45 PM;RELEASN;CSI 2nd Screen → Waiver Late Payment Penalty.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304011/CSI+2nd+Screen+%E2%86%92+Waiver+Late+Payment+Penalty.png","11/Jul/23 3:39 PM;RELEASN;INC2736408_DF(DFSIN-11508)_Update LPP Shortfall Indicator_V3.sql;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305273/INC2736408_DF%28DFSIN-11508%29_Update+LPP+Shortfall+Indicator_V3.sql","28/Jun/23 1:21 AM;NNEWZEA;MicrosoftTeams-image (56)-20230627-144431.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302214/MicrosoftTeams-image+%2856%29-20230627-144431.png","28/Jun/23 1:21 AM;NNEWZEA;MicrosoftTeams-image (57)-20230627-144435.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302213/MicrosoftTeams-image+%2857%29-20230627-144435.png","28/Jun/23 1:21 AM;NNEWZEA;MicrosoftTeams-image (59)-20230627-144443.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302212/MicrosoftTeams-image+%2859%29-20230627-144443.png","24/Jul/23 2:54 PM;JTRIPAT;Payout SS 24 Jul'23.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308090/Payout+SS+24+Jul%2723.docx","06/Jul/23 1:01 PM;JTRIPAT;Payout cn charges FMO testing SS 6 Jul'23.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304161/Payout+cn+charges+FMO+testing+SS+6+Jul%2723.docx","06/Jul/23 1:00 PM;JTRIPAT;Payout cn charges prod SS 6 Jul'23.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304160/Payout+cn+charges+prod+SS+6+Jul%2723.docx","26/Jun/23 1:00 PM;JTRIPAT;Payout cn charges.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/301667/Payout+cn+charges.docx","25/Jul/23 5:10 PM;NKAKARL;image-2023-07-25-14-40-48-427.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/308471/image-2023-07-25-14-40-48-427.png",,,,,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,23a release,,,,,,CMS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0upk2:",ASTDM-11251,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"28/Jun/23 1:21 AM;NNEWZEA;Assigned back with below comment and attachment:
+
+ 
+
+As per the analysis Contract payout is shown in the screenshot and No amount exists in overdue for a late payment penalty. All overdue rentals are adjusted/settled. Late Payment Penalty exists for Shortfall amount. Take the shortfall receipt to settle.
+
+All above mentioned details evidence and SS are attached;;;","29/Jun/23 12:11 PM;JTRIPAT;Dear team,
+This bug raised for the different charges amount appearing in CMS tabs.
+Sample CN- 10106781
+like in 1st CSI screen its showing 121450.54 is total outstanding where as in inside article closing tab its showing 365436.24 amount as outstanding.
+
+this needs to be rectified and only actual outstanding should appear in all screens.;;;","05/Jul/23 6:46 PM;RELEASN;Shortfall amount is different from outstanding charges amount because of outstanding LPP on this contract. 
+Evidence Attached
+CSI 2nd Screen → Waiver Late Payment Penalty
+Lpp is not displaying on other screens due to contract migration issue, can be verified on any other contract.
+
+Thank you.
+
+ !CSI 2nd Screen → Waiver Late Payment Penalty.png|thumbnail! 
+
+[~NKAKARL];;;","06/Jul/23 1:01 PM;JTRIPAT;Hi team, As requested check for other sample contract in PROD and FMO, still total Outstanfing not matching for P [^Payout cn charges FMO testing SS 6 Jul'23.docx] ayout contract.
+
+Details attached here in Docs. [^Payout cn charges prod SS 6 Jul'23.docx] ;;;","06/Jul/23 1:08 PM;NKAKARL;[~NETSMTH] 
+
+PFA the market feedback and support to fix the same on priority.;;;","11/Jul/23 3:40 PM;RELEASN;Hi [~NKAKARL],
+This is Data Migration Issue, Data Fix is already provided on Production, deploy the attached Data Fix on FMO to verify.
+ [^INC2736408_DF(DFSIN-11508)_Update LPP Shortfall Indicator_V3.sql] 
+
+Thank you. ;;;","11/Jul/23 5:43 PM;NKAKARL;[~MTRIBHU] [~JTRIPAT] 
+
+Please find above the NETSOL comments and get arrange to deploy the data fix in FMO environment.
+
+ 
+
+[~MALIKPR] ;;;","11/Jul/23 7:43 PM;MTRIBHU;Fix Under deployment, today will deploy and confirm to Jay;;;","12/Jul/23 6:30 PM;MTRIBHU;Dear Janmejay,
+
+ 
+
+We have deployed fix on FMO. Kindly verify.;;;","12/Jul/23 6:33 PM;JTRIPAT;Dear Team, checked with sample cn - 10113560 , Amount still not matching.
+
+Docs attached here for your reference [^10113560 .docx] .
+
+;;;","12/Jul/23 7:09 PM;NKAKARL;[~NETSMTH] 
+
+Amounts are not matching even after deploying the data fix which was asked us to deploy over FMO PROD.
+
+Please check further on this and advise the solution.;;;","22/Jul/23 12:29 AM;RELEASN;This item is shipped in 'MBFSI-Patch 04.21.03.48_hfx_17'.;;;","24/Jul/23 1:25 PM;NKAKARL;[~JTRIPAT] 
+
+Bug fix is deployed on FMO, Please retest it and provide the feedback.
+
+[~MTRIBHU] ;;;","24/Jul/23 2:33 PM;JTRIPAT;Hi team Fix not working fine check for sample CN - 10113560 [^10113560 24 Jul'23.docx] ;;;","24/Jul/23 2:54 PM;JTRIPAT;Hi team,
+
+Checked with 3 sample contract, fox not working, SS attached here.10120562 , 20107703 & 10113560. [^Payout SS 24 Jul'23.docx] ;;;","24/Jul/23 3:24 PM;RELEASN;HI [~JTRIPAT] ,
+
+At 2nd screen of CSI, in Receivable detail Behavior is same in Production.
+There is a Production item INC3672893 for LPP amount on CSI’s 1st screen & Lpp amount in Current Receivables on CSI’s 2nd screen. 
+
+[~NKAKARL] ;;;","24/Jul/23 4:52 PM;JTRIPAT;Based on above Netsol revrt closing this test, cases, as it is having same behavior in Prod.
+
+In Production it is still not resolved. for this Snow ticket raised for correction -[2:17 PM] Tripathi, Janmejay (395-Extern-EXTERN)
+
+INC3672893
+INC3522737 
+
+ ;;;","25/Jul/23 5:10 PM;NKAKARL;[~NETSMTH] 
+
+This needs to be fixed as this was the SO item delivered in 23A....
+
+ 
+
+!image-2023-07-25-14-40-48-427.png!;;;","26/Jul/23 4:40 PM;NKAKARL;[~RELEASN] 
+
+Hi Team, Considering my feedback above, We are expecting this bug fixation in upcoming HF by tomorrow.;;;",,,,,,,,,,
+Incorrect WIAS report ,ASDTM-11264,301096,Bug,Open,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,High,,NCOMMON,JIANLEE,JIANLEE,23/Jun/23 1:15 PM,01/Aug/23 5:04 PM,01/Aug/23 5:49 PM,,WFS [System],,,0,23A_GLC,23ARelease,GLC,NSBOWFS,,"Please be informed that the system should generate all the “open invoices” in the WFS system (Current, Sold, and Matured only). However, I noticed that the invoices with the status of “Transferred” and “Settled” were not removed.
+
+",,,,,,,,,,,,,,ASDTM-9521,,,,,,,,,,ASDTM-11291,,"04/Jul/23 6:29 PM;NCOMMON;MY - ASDTM-11264 - UD.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/303700/MY+-+ASDTM-11264+-+UD.docx","27/Jun/23 6:02 PM;NCOMMON;MY - ASDTM-11264 Geofence Post Deployment Configuration.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302168/MY+-+ASDTM-11264+Geofence+Post+Deployment+Configuration.docx","28/Jun/23 11:48 AM;KUSUMI2;RE ASDTM-11264 Incorrect WIAS report .msg;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302331/RE+ASDTM-11264+Incorrect+WIAS+report+.msg","04/Jul/23 6:28 PM;NCOMMON;TH - ASDTM-11077- Issue#2 UD.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/303699/TH+-+ASDTM-11077-+Issue%232+UD.docx","23/Jun/23 12:06 PM;JIANLEE;WIAS FMO.xls;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/301287/WIAS+FMO.xls","31/Jul/23 10:52 PM;KUSUMI2;image-2023-07-31-20-24-56-197.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309761/image-2023-07-31-20-24-56-197.png","31/Jul/23 10:53 PM;KUSUMI2;image-2023-07-31-20-25-01-736.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309762/image-2023-07-31-20-25-01-736.png","27/Jun/23 9:51 AM;JIANLEE;screenshot-1.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/301900/screenshot-1.png","12/Jul/23 8:16 PM;JIANLEE;update on 12.07.2023 with settlement or transferred date.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305686/update+on+12.07.2023+with+settlement+or+transferred+date.png","12/Jul/23 8:06 PM;JIANLEE;update on 12.07.2023.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305682/update+on+12.07.2023.png","12/Jul/23 8:08 PM;JIANLEE;updated 12.07.2023 .PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305683/updated+12.07.2023+.PNG","12/Jul/23 8:37 PM;JIANLEE;updated 12.07.2023 with settlement date .PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/305693/updated+12.07.2023+with+settlement+date+.PNG",,,,,,,,,,,,,,WFS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,MY,,,Run,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,WFS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uouy:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"26/Jun/23 3:18 PM;KUSUMI2;Hi [~JIANLEE]  - I'm closing this defect as I have already raised another defect ASDTM-11283 for this issue and shared over the email.
+
+ 
+
+[~NCOMMON]  [~HIMAZAM] ;;;","27/Jun/23 9:50 AM;JIANLEE;i have re-downloaded the WIAS report, but the ""Settled Status"" was not removed.
+Please re-visit the topic, thank you.;;;","27/Jun/23 9:53 AM;HIMAZAM;[~KUSUMI2] [~NETSMTH] 
+Please refer to the screenshot
+
+ 
+
+!screenshot-1.png|thumbnail!
+
+ 
+
+[~JIANLEE] ;;;","27/Jun/23 12:48 PM;NCOMMON;[~KUSUMI2] Please correct ticket status it should not be ""Reopened"" instead mark it ""Open"". We already have latest communication on ticket ASDTM-11283.;;;","27/Jun/23 1:09 PM;KUSUMI2;Hi [~NCOMMON]  Noted and corrected the ticket status.;;;","27/Jun/23 3:43 PM;NCOMMON;[~KUSUMI2] As per the GTM session conducted today, it was found that GeoFence configuration are missing on FMO environment and we will  share configuration list for SO team verifications.
+
+For 2nd issue, where WFS report is showing incorrect data, please ask market to share issue details for further analysis.;;;","27/Jun/23 4:13 PM;KUSUMI2;Hi [~HIMAZAM]  [~JIANLEE] 
+
+Please share the issue details as requested by Netsol Team for further analysis on this defect.
+
+ 
+
+[~NCOMMON]  - Please share the configuration list when it will be available with you.
+
+ ;;;","27/Jun/23 6:05 PM;NCOMMON;[~KUSUMI2] Please find attached configuration document related to Geofence. Most of these configurations should be readily available because we are using production database in FMO. Please double check if anything is missing.
+
+ [^MY - ASDTM-11264 Geofence Post Deployment Configuration.docx] 
+
+Apart from these application configurations, there might be environment related configurations need to be performed by SO team. CMO SO person should be aware of all these environment level configurations and should be reached to perform relevant configurations in FMO environment as well.;;;","27/Jun/23 6:45 PM;KUSUMI2;Hi [~NCOMMON]  - Can we have quick GTM tomorrow if your available for the configuration you have shared. We want to be sure that configuration will be making is correct .
+
+ 
+
+[~HIMAZAM] ;;;","27/Jun/23 7:28 PM;NCOMMON;[~KUSUMI2] Most of these application configurations were already configured in CMO environment during last releases and readily available in FMO environment as well. Please share this document with SO and Market persons as both are aware of these configurations.
+
+For environment related configurations, SO person need to take support from CMO support person or other relevant SO team.
+
+In case still GTM is required please arrange it after EID holidays.;;;","28/Jun/23 10:37 AM;HIMAZAM;[~NETSMTH] [~KUSUMI2] 
+
+Email sent for further information on the issue.;;;","28/Jun/23 11:48 AM;KUSUMI2;Hi [~NETSMTH]  - I'm attaching the email here for your reference.
+
+ 
+
+[^RE ASDTM-11264 Incorrect WIAS report .msg]
+
+ 
+
+[~HIMAZAM] ;;;","04/Jul/23 6:28 PM;NCOMMON;[~JIANLEE] We have analyzed the reported scenario and found that the Geofence will push ""settled"" and ""transferred"" status loans only on the day the loans have been marked as ""Settled"" or ""Transferred"" otherwise only ""Floorplan loans"" will be pushed.
+
+Here is UD with FS reference for better understanding. 
+
+Note: Please try to perform Geofence data push with ""transferred"" and ""settled"" loans, once the data is pushed the same loans will not appear again in subsequent data push.;;;","04/Jul/23 6:29 PM;NCOMMON;Here is the UD for reference.  [^MY - ASDTM-11264 - UD.docx] 
+;;;","12/Jul/23 11:50 AM;KUSUMI2;Hi [~JIANLEE]  - Please refer the understanding the provided by Netsol Team and share your feedback.
+
+ 
+
+[~ANANDAD]  [~GANESIV]  [~HIMAZAM] ;;;","12/Jul/23 7:21 PM;KUSUMI2;Hi [~JIANLEE]  - Please look at the clarification shared by Netsol Team and share your feedback.
+
+ 
+
+[~HIMAZAM]  [~GANESIV]  [~ANANDAD] ;;;","12/Jul/23 8:37 PM;JIANLEE;I have extracted the WIAS report based on the WFS FMO processing date is 01/06/2023. i noticed that the settled (05/05/2023) or transferred (27/02/2023, 05/05/2023) unit still available in WIAS report. Please re-visit as its triggered Personal Data Protection Act issue. 
+Besides, the WFS system is live and the data should be extracted as ""Current"" and ""Sold"" only. Why there is a gap if the system is live?
+ !updated 12.07.2023 with settlement date .PNG|thumbnail! 
+;;;","13/Jul/23 2:04 PM;KUSUMI2;Hi [~NETSMTH]  - Please provide clarification for above ask.
+
+ 
+
+[~HIMAZAM]  [~JIANLEE] ;;;","13/Jul/23 7:11 PM;NCOMMON;[~KUSUMI2] Please arrange GTM session tomorrow at 11 AM PST to discuss this ticket further.
+[~HIMAZAM] [~JIANLEE];;;","14/Jul/23 1:41 PM;KUSUMI2;Hi [~NCOMMON]  - Can we have this GTM sometime  later in the day today as we are Hotfix deployment call with Netsol team for OCAPI component.
+
+ 
+
+[~HIMAZAM] ;;;","14/Jul/23 1:51 PM;NCOMMON;[~KUSUMI2] Sure. I will confirm you GTM time shortly.;;;","14/Jul/23 6:24 PM;KUSUMI2;Hi [~NCOMMON]  - Please share availability for next GTM.
+
+ 
+
+[~HIMAZAM] ;;;","14/Jul/23 6:37 PM;NCOMMON;Please arrange GTM session on Monday at 11 AM PST to discuss this ticket further.
+
+[~KUSUMI2];;;","18/Jul/23 4:48 PM;KUSUMI2;Hi [~HIMAZAM]  [~JIANLEE]  - Please complete the action as requested by Netsol team in the yesterday GTM and we can schedule another GTM if required.
+
+ ;;;","20/Jul/23 11:59 PM;KUSUMI2;Hi [~HIMAZAM]  [~JIANLEE]  - Requesting you to update the defect as discussed in the GTM.
+
+ 
+
+[~ANANDAD]  [~GANESIV] ;;;","31/Jul/23 12:51 AM;KUSUMI2;Hi [~TYANLIN]  - Configuration has been done by the SO team as confirmed over the email. Please let us know if any assistance is required to retest this defect.
+
+ 
+
+[~JIANLEE]  [~HIMAZAM]  [~GANESIV]  [~ANANDAD] ;;;","31/Jul/23 10:53 PM;KUSUMI2;Hi [~NETSMTH]  - SO team has done the configuration and BU has downloaded the WIAS report, and noticed the settled and transferred were not removed. 
+
+Please share availability for tomorrow GTM for this.
+
+!image-2023-07-31-20-25-01-736.png!
+
+ 
+
+ 
+
+ 
+
+[~JIANLEE]  [~HIMAZAM]  [~GANESIV]  [~ANANDAD]  [~TYANLIN] ;;;","01/Aug/23 12:40 PM;NCOMMON;[~KUSUMI2]  Please share GTM at 2 pm PST. Please share GTM link accordingly.;;;","01/Aug/23 4:55 PM;KUSUMI2;Hi [~NCOMMON]  - BUs are not available at revised timing shared over the email. Please share availability in the 1st half tomorrow for this discussion.
+
+ 
+
+[~TYANLIN]  [~JIANLEE]  [~HIMAZAM]  [~GANESIV]  [~ANANDAD] 
+
+ 
+
+ ;;;"
+Additional funding not reflecting in CMS FMO,ASDTM-11104,299815,Bug,Reopened,ASDTM,Ascent Service Delivery Test Management,business,ABSRINI,,,Highest,,NETSMTH,ANUKUM1,ANUKUM1,13/Jun/23 2:46 PM,01/Aug/23 5:20 PM,01/Aug/23 7:19 PM,,CMS [System],,,0,23ARelease,NSBO,,,,"Hi Team,
+
+ 
+
+Please check the issue as DTP is passing the funded value but from NETSOL side we are getting the in correct value.
+
+Check the request and response attached for more details from PROD and FMO. 
+
+ 
+
+below application where pitched in DTP with additional funding the same is not flow to CMS 
+|DF-A013123-000|
+|DF-A013124-000|
+|DF-A013125-000|
+|DF-A013126-000|
+|DF-A013127-000|
+|DF-A013128-000|
+|DF-A013129-000|
+|DF-A013130-000|
+|DF-A013131-000|",,,,,,,,,,,,,,,,,ASDTM-9489,ASDTM-11201,,,,,,,,"14/Jun/23 11:10 AM;ANUKUM1;1.PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/298163/1.PNG","14/Jun/23 11:10 AM;ANUKUM1;2.PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/298164/2.PNG","15/Jun/23 8:07 PM;ANUKUM1;Body funding DTP 2.PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/298934/Body+funding+DTP+2.PNG","17/Jul/23 5:59 PM;NKAKARL;DTP.2023-07-13.log;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/306531/DTP.2023-07-13.log","06/Jul/23 5:11 PM;SHADHAN;INC3462239_BodyFunding_UAT_Analysis-1.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304327/INC3462239_BodyFunding_UAT_Analysis-1.docx","28/Jun/23 7:17 PM;MTRIBHU;INC3462239_BodyFunding_UAT_Analysis.docx;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/302612/INC3462239_BodyFunding_UAT_Analysis.docx","04/Jul/23 6:12 PM;NKAKARL;Logs.rar;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/303694/Logs.rar","01/Aug/23 5:18 PM;MTRIBHU;RE_ INC3956421 - Body Funding Issue in FMO UAT.msg;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/309938/RE_+INC3956421+-+Body+Funding+Issue+in+FMO+UAT.msg","15/Jun/23 8:07 PM;ANUKUM1;body funding DTP 1.PNG;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/298933/body+funding+DTP+1.PNG","06/Jul/23 5:12 PM;SHADHAN;prod_request.txt;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304328/prod_request.txt","06/Jul/23 5:12 PM;SHADHAN;prod_response.txt;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304329/prod_response.txt","23/Jun/23 2:14 PM;RELEASN;screenshot-1.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/301351/screenshot-1.png","23/Jun/23 2:17 PM;RELEASN;screenshot-2.png;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/301352/screenshot-2.png","06/Jul/23 5:12 PM;SHADHAN;uat_request.txt;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304330/uat_request.txt","06/Jul/23 5:12 PM;SHADHAN;uat_response.txt;https://jira-dsc.apac.bg.corpintra.net/secure/attachment/304331/uat_response.txt",,,,,,,,,,,CMS,,,,,,SIT,,,,,,,,,,,,"Key effort types for consideration:
+- Requirements Analysis
+- HLD (incl Class A Estimation)
+- SRS (incl Class C Estimation)
+- Implementation
+- QA/Testing (incl UT,EUT, FT support)
+- UAT Support / Documentation
+- Training
+",,"Highlight the associated risks for the entire change (development team, business unit, etc)",PRD,All,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,IN,,,Run,,,,,,,,,,,,,,,,,,,,PROD,,,,,,,,,,,,,,,,,,,,,,,04.21.03.48_HFX14,,CMS,,,,,,,,,,,,,,,,Please Select…,,,,,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,,,,,,,TBD,,"2|i0uh76:",,,,,,,,,,,Please Select...,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"13/Jun/23 3:50 PM;RELEASN;[~NKAKARL] 
+Kindly provide evidences of the mentioned issue as it is difficult to analyze the issue without evidences. 
+
+Thank you.
+[~KUASHWI] [~ANANDAD] [~MALIKPR];;;","13/Jun/23 11:51 PM;NKAKARL;Evidences are missing, Please provide the same for further analysis to be done.;;;","14/Jun/23 1:54 PM;MTRIBHU;# Issue :- Additional funding amount not reflecting in FMO - INPRD .
+ # we have already attached the screenshots also where additional funding should be appear.;;;","15/Jun/23 6:40 PM;NKAKARL;[~MTRIBHU]  [~RAMCHAN] 
+
+Please provide the screenshot of DTP where additional funding is captured for any 2 applications from below list.
+
+ 
+|DF-A013123-000|
+|DF-A013124-000|
+|DF-A013125-000|
+|DF-A013126-000|
+|DF-A013127-000|
+|DF-A013128-000|
+|DF-A013129-000|
+|DF-A013130-000|
+|DF-A013131-000|;;;","16/Jun/23 12:40 PM;NKAKARL;[~RELEASN]  [~NETSMTH] 
+
+All the required evidences are placed for your analysis, Please proceed and advise the solution.;;;","16/Jun/23 2:21 PM;RELEASN;Hi [~NKAKARL] 
+Kindly help us to provide DTPSaveApplication logs, as we are unable to investigate the issue using provided evidences. 
+
+Thank you. ;;;","16/Jun/23 7:06 PM;NKAKARL;[~RELEASN] 
+
+DTP logs are attached as required, Please proceed!;;;","17/Jun/23 2:41 AM;RELEASN;[~NKAKARL] 
+As discussed in GTM, we found DTP logs, working on the issue and update you after analysis. 
+
+
+Thank You. ;;;","23/Jun/23 2:20 PM;RELEASN;[~NKAKARL]
+As per DTP_Save_Application_Logs Analysis, Additional Body Funding Amount is not provided during DTP_Save_Application. That’s why it is not showing in CMS.
+Please refer to the screenshot .
+;;;","23/Jun/23 2:58 PM;NKAKARL;[~ANUKUM1] [~MTRIBHU] 
+
+Please find above the NETSOL comments and verify the same again accordingly.;;;","23/Jun/23 6:36 PM;NKAKARL;[~MTRIBHU] [~ANUKUM1] 
+
+This is not a CMS issue, Looks like body type details are not getting saved by DTP. Please check with DTP team and get it fixed hence please close this Jira bug.
+
+[~MALIKPR] ;;;","27/Jun/23 3:39 PM;MTRIBHU;INC3768846 - ticket raised for DTP team to investigate .;;;","28/Jun/23 5:23 PM;NKAKARL;Please close this ticket as this is not a CMS issue, It is a DTP issue.;;;","28/Jun/23 7:19 PM;MTRIBHU;Hi Naresh,
+
+ 
+
+As we checked with DTP team (Thomas, Mathew M. (623) <[mathew.m.thomas@mercedes-benz.com|mailto:mathew.m.thomas@mercedes-benz.com]>)and below is there feedback, Please have look and check with Netsol.
+
+ 
+
+We have observed that body funding details including the fund indicator are passed correctly in GetFinancialChartData from DTP side.
+
+ 
+
+However the finance amount returned to DTP does not seem to be correct, which is causing the miscalculation of downpayment in DTP.
+
+ 
+
+This issue needs to be checked by NETSOL team.  required details attached - INC3462239_BodyFunding_UAT_Analysis.docx;;;","30/Jun/23 1:46 PM;NKAKARL;[~NETSMTH] 
+
+Please find above the analysis findings shared by DTP team and advise the next steps for resolution.
+
+We have setup a meeting on coming Monday (03.07.2023) to have a joint discussion on the same.
+
+ 
+
+[~MTRIBHU] ;;;","04/Jul/23 6:11 PM;NKAKARL;[~NETSMTH] 
+
+As requested in GTM yesterday (03.607.2023) DTP logs are shared for NETSOL analysis.;;;","08/Jul/23 8:27 PM;RELEASN;This item is shipped in 'MBFSI-Patch 04.21.03.48_hfx_14'.;;;","11/Jul/23 11:59 AM;NKAKARL;[~SHADHAN] [~RAMCHAN] [~ANUKUM1] 
+
+Bug fix is deployed in FMO, Please re-test it and provide the feedback.
+
+ 
+
+[~MTRIBHU]   [~MALIKPR] ;;;","14/Jul/23 2:16 PM;RAMCHAN;Team we have tested this cases even after HF deployment still additional funding is not flowing 
+
+[~MTRIBHU][~MALIKPR];;;","14/Jul/23 2:27 PM;MTRIBHU;Hi Netsol,
+
+In testing of HF14 also issue not resolved still additional funding is not flowing- failed.;;;","14/Jul/23 6:14 PM;RELEASN;Hi,
+As per team, issue is fixed related to retail application. Team has communicated it in attached email. Now, issue exists at DTP FE side. Please check it internally and also share detailed information e.g. DTP logs of these impacted applications for our team analysis.
+
+[~NKAKARL][~ANUKUM1];;;","17/Jul/23 5:59 PM;NKAKARL;[~NETSMTH] 
+
+DTP logs are attached, Please check
+
+ ;;;","17/Jul/23 8:34 PM;NKAKARL;[~SHADHAN] [~MTRIBHU] 
+
+ 
+
+As per our combined GTM analysis it is observed that calculation logic is fixed at CMS side which resulted DTP values of down payment & finance amounts are correctly computed in DTP FE, However the body funding & insurance amounts which captured in DTP FE are not flowing to CMS as there is a breakage where data is not being saved properly at DTP side resulted body funding values showing NULL in CMS after application submitted from DTP.
+
+ 
+
+We have concluded that this is a DTP issue and DTP team is further looking into this issue.
+
+Please close this ticket.
+
+[~MALIKPR] [~MTRIBHU] ;;;","01/Aug/23 5:20 PM;MTRIBHU;Hi Netsol,
+
+ 
+
+Please find attachment ""RE_ INC3956421 - Body Funding Issue in FMO UAT.msg"" where DTP team share there feedback. Please check and confirm.;;;",,,,,

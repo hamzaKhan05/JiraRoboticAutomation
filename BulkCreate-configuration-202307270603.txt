@@ -1,0 +1,118 @@
+{
+  "config.version" : "2.0",
+  "config.project.from.csv" : "false",
+  "config.encoding" : "UTF-8",
+  "config.file.id" : "5f083bce-2535-4d9a-a576-c4d5c7aad48a",
+  "config.email.suffix" : "@",
+  "config.file.name" : "NewImportedFile.csv",
+  "config.field.mappings" : {
+    "Custom field (Application)" : {
+      "userChanged" : "false",
+      "manualMapping" : "true",
+      "existing.custom.field" : "23703"
+    },
+    "Description" : {
+      "jira.field" : "description",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Priority" : {
+      "jira.field" : "priority",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Customer Reference No" : {
+      "userChanged" : "false",
+      "manualMapping" : "true",
+      "existing.custom.field" : "13212"
+    },
+    "Labels" : {
+      "jira.field" : "labels",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Components" : {
+      "jira.field" : "components",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Project" : {
+      "userChanged" : "false",
+      "manualMapping" : "true",
+      "existing.custom.field" : "13212"
+    },
+    "Type" : {
+      "jira.field" : "issuetype",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Summary" : {
+      "jira.field" : "summary",
+      "userChanged" : "false",
+      "manualMapping" : "true"
+    },
+    "Region" : {
+      "userChanged" : "false",
+      "manualMapping" : "true",
+      "existing.custom.field" : "21100"
+    },
+    "Remaining Estimate" : {
+      "jira.field" : "timeestimate",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Original Estimate" : {
+      "jira.field" : "timeoriginalestimate",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    }
+  },
+  "config.csv.file.id" : null,
+  "config.value.mappings" : {
+    "Components" : {
+      "Jira Logging Assistant" : "Jira Logging Assistant"
+    },
+    "Project" : {
+      "Jira Sync Automation (JSA)" : "Jira Sync Automation (JSA)"
+    },
+    "Type" : {
+      "UAT Issues" : "17101"
+    },
+    "Custom field (Application)" : {
+      "Retail" : "Retail"
+    },
+    "Description" : {
+      "The business partner should be Mercedes Benz Services Malaysia (Supplier) in payable tab, but currently the business partner is CCB which is the dealer. In compliance during compliance approval, the invoice roles was change to MBSM (Supplier) and it should flow in payable tab as well. But in FMO ROTF, this behavior is not according as it should be.Â Â \n\nContract number 10142575" : "The business partner should be Mercedes Benz Services Malaysia (Supplier) in payable tab, but currently the business partner is CCB which is the dealer. In compliance during compliance approval, the invoice roles was change to MBSM (Supplier) and it should flow in payable tab as well. But in FMO ROTF, this behavior is not according as it should be.Â Â Contract number 10142575",
+      "during restructure of TDS contract in NEW RPS TDS amount not generated.\n\n\n\nSample contract - 10143160 , we have executed Restructure in Jul'23.\n\n\n\nDetails attached here with SS  " : "during restructure of TDS contract in NEW RPS TDS amount not generated.Sample contract - 10143160 , we have executed Restructure in Jul'23.Details attached here with SS  "
+    },
+    "Priority" : {
+      "Moderate" : "10000"
+    },
+    "Region" : {
+      "DFS India" : "DFS India",
+      "MB Malaysia" : "MB Malaysia"
+    },
+    "Summary" : {
+      "POS-CMS Model B I The business partner in payable doesn't flow correctly" : "POS-CMS Model B I The business partner in payable doesn't flow correctly",
+      "During Restructure of TDS contract in NEW RPS TDS amount not generated." : "During Restructure of TDS contract in NEW RPS TDS amount not generated."
+    },
+    "Customer Reference No" : {
+      "ASDTM-11475" : "ASDTM-11475",
+      "ASDTM-11492" : "ASDTM-11492"
+    },
+    "Labels" : {
+      "ASDTM-11475" : "ASDTM-11475",
+      "ASDTM-11492" : "ASDTM-11492"
+    }
+  },
+  "config.delimiter" : ",",
+  "config.project" : {
+    "project.type" : null,
+    "project.key" : "JSA",
+    "project.description" : null,
+    "project.url" : null,
+    "project.name" : "Jira Sync Automation",
+    "project.lead" : "6401794d4307e46ad144fccf"
+  },
+  "config.date.format" : "dd/MMM/yy h:mm a"
+}
