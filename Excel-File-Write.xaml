@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Excel_File_Write" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Excel_File_Write" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_FileNameArgument" Type="InOutArgument(x:String)" />
     <x:Property Name="NewFileName" Type="OutArgument(x:String)" />
@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>972,7292.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>695.2,3546.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Excel_File_Write_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -50,6 +50,11 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.Python</x:String>
       <x:String>UiPath.Python.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -91,309 +96,295 @@
       <AssemblyReference>UiPath.Python</AssemblyReference>
       <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Excel_File_Write" sap:VirtualizedContainerService.HintSize="982.4,7228" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Excel_File_Write" sap:VirtualizedContainerService.HintSize="705.6,3481.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="NewFileDataTable" />
       <Variable x:TypeArguments="p:PythonObject" Name="PythonObject" />
+      <Variable x:TypeArguments="sd:DataTable" Name="TempDatatable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="920,329.6" sap2010:WorkflowViewState.IdRef="PythonScope_1">
+    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="643.2,3369.6" sap2010:WorkflowViewState.IdRef="PythonScope_1">
       <p:PythonScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,292.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="609.6,3332.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="ParameterDuplicate" />
+              <Variable x:TypeArguments="p:PythonObject" Name="PythonDataFrameObject" />
+              <Variable x:TypeArguments="x:String" Name="JsonDfString" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[PythonObject]" ScriptFile="RenameDuplicateColumns.py" />
-            <p:InvokeMethod Result="{x:Null}" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="387.2,80.8" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[PythonObject]" Name="duplicate" Parameters="[{In_FileNameArgument}]" />
-          </Sequence>
-        </ActivityAction>
-      </p:PythonScope.Body>
-    </p:PythonScope>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="920,6746.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
-      <ueab:ExcelProcessScopeX.Body>
-        <ActivityAction x:TypeArguments="ui:IExcelProcess">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="886.4,6660" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="824,6548" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[In_FileNameArgument + &quot;.csv&quot;]">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="790.4,6278.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="sd:DataTable" Name="TempDatatable" />
-                      <Variable x:TypeArguments="x:Int32" Name="Count" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckAttachment" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComment" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckLabels" />
-                      <Variable x:TypeArguments="x:String" Name="CountryValues" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComponents" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComponent" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckIssue" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckFunction" />
-                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckBlocks" />
-                    </Sequence.Variables>
+            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="547.2,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[PythonObject]" ScriptFile="RenameDuplicateColumns.py" />
+            <p:InvokeMethod DisplayName="'Configure' function returns json string" sap:VirtualizedContainerService.HintSize="547.2,80.8" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[PythonObject]" Name="configure" Parameters="[New List(Of Object) ({In_FileNameArgument})]" Result="[PythonDataFrameObject]" />
+            <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="547.2,80.8" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[PythonDataFrameObject]" Result="[JsonDfString]" />
+            <ui:DeserializeJson x:TypeArguments="sd:DataTable" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="547.2,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[TempDatatable]" JsonString="[JsonDfString]" />
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="547.2,2779.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="Count" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckAttachment" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComment" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckLabels" />
+                <Variable x:TypeArguments="x:String" Name="CountryValues" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComponents" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckComponent" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckIssue" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckFunction" />
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="CheckBlocks" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Labels" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Project" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Region" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Type" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" />
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Customer Reference No" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
+              <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Components" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="484.8,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_9" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TempDatatable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484.8,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="559.2,2428.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="LabelValues" />
+                        <Variable x:TypeArguments="x:String" Name="PriorityValues" />
+                        <Variable x:TypeArguments="x:String" Name="TypeValues" />
+                        <Variable x:TypeArguments="x:String" Name="ProductValues" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Priority" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">[PriorityValues]</OutArgument>
+                        </ui:GetRowItem.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:GetRowItem>
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[PriorityValues]" sap:VirtualizedContainerService.HintSize="496.8,210.4" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Highest" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_6" Row="[CurrentRow]" Value="[&quot;Critical&quot;]" />
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="High" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_7" Row="[CurrentRow]" Value="[&quot;Major&quot;]" />
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Medium" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_8" Row="[CurrentRow]" Value="[&quot;Moderate&quot;]" />
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Low" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_9" Row="[CurrentRow]" Value="[&quot;Minor&quot;]" />
+                      </Switch>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue key" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">[LabelValues]</OutArgument>
+                        </ui:GetRowItem.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:GetRowItem>
+                      <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Labels" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="496.8,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2" Row="[CurrentRow]" Value="[LabelValues]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:UpdateRowItem>
+                      <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Customer Reference No" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="496.8,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_26" Row="[CurrentRow]" Value="[LabelValues]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:UpdateRowItem>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Custom field (Country)" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">[CountryValues]</OutArgument>
+                        </ui:GetRowItem.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:GetRowItem>
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CountryValues]" sap:VirtualizedContainerService.HintSize="496.8,52.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence x:Key="IN" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_5" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_17" Row="[CurrentRow]" Value="[&quot;DFS India&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="SG" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_10" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_18" Row="[CurrentRow]" Value="[&quot;MB Singapore&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="NZ" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_11" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_19" Row="[CurrentRow]" Value="[&quot;MB New Zealand&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="MY" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_12" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_20" Row="[CurrentRow]" Value="[&quot;MB Malaysia&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="KR" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_13" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_21" Row="[CurrentRow]" Value="[&quot;MB Korea&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="AU" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_14" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_22" Row="[CurrentRow]" Value="[&quot;MB Australia&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="JP" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_15" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_23" Row="[CurrentRow]" Value="[&quot;MB Japan&quot;]" />
+                        </Sequence>
+                        <Sequence x:Key="HK" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_16" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_24" Row="[CurrentRow]" Value="[&quot;MB Hong Kong&quot;]" />
+                        </Sequence>
+                      </Switch>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue type" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[CurrentRow]">
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">[TypeValues]</OutArgument>
+                        </ui:GetRowItem.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:GetRowItem>
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[TypeValues]" sap:VirtualizedContainerService.HintSize="496.8,140.8" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence x:Key="Bug" sap:VirtualizedContainerService.HintSize="449.6,304.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Type" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_25" Row="[CurrentRow]" Value="[&quot;UAT Issues&quot;]" />
+                        </Sequence>
+                      </Switch>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Custom field (Application)" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[CurrentRow]">
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">[ProductValues]</OutArgument>
+                        </ui:GetRowItem.Value>
+                      </ui:GetRowItem>
+                      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[ProductValues]" sap:VirtualizedContainerService.HintSize="496.8,187.2" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="CMS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_28" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="WFS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_29" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="POS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_30" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
+                      </Switch>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:WriteCsvFile AddHeaders="True" DataTable="[TempDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="JiraToPythonDt.csv" sap:VirtualizedContainerService.HintSize="484.8,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+              <p:InvokeMethod Parameters="{x:Null}" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" Instance="[PythonObject]" Name="filter" Result="[PythonDataFrameObject]" />
+              <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="484.8,80.8" sap2010:WorkflowViewState.IdRef="GetObject`1_2" PythonObject="[PythonDataFrameObject]" Result="[JsonDfString]" />
+              <ui:DeserializeJson x:TypeArguments="sd:DataTable" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="484.8,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[TempDatatable]" JsonString="[JsonDfString]" />
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484.8,352.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,274.4" sap2010:WorkflowViewState.IdRef="Sequence_45">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="728,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;23ARelease_Bugs_Netsol (Jira) 2&quot;)]" SaveTo="[TempDatatable]">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ueab:ReadRangeX>
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Labels" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Project" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Region" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Type" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Customer Reference No" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
-                    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Components" DataTable="[TempDatatable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_9" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TempDatatable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="728,3385.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                      <ui:ForEachRow.Body>
-                        <ActivityAction x:TypeArguments="sd:DataRow">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="559.2,3269.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                            <Sequence.Variables>
-                              <Variable x:TypeArguments="x:String" Name="LabelValues" />
-                              <Variable x:TypeArguments="x:String" Name="PriorityValues" />
-                              <Variable x:TypeArguments="x:String" Name="TypeValues" />
-                              <Variable x:TypeArguments="x:String" Name="ProductValues" />
-                            </Sequence.Variables>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Priority" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[CurrentRow]">
-                              <ui:GetRowItem.Value>
-                                <OutArgument x:TypeArguments="x:String">[PriorityValues]</OutArgument>
-                              </ui:GetRowItem.Value>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:GetRowItem>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[PriorityValues]" sap:VirtualizedContainerService.HintSize="496.8,208" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Highest" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_6" Row="[CurrentRow]" Value="[&quot;Critical&quot;]" />
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="High" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_7" Row="[CurrentRow]" Value="[&quot;Major&quot;]" />
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Medium" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_8" Row="[CurrentRow]" Value="[&quot;Moderate&quot;]" />
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="Low" ColumnName="Priority" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_9" Row="[CurrentRow]" Value="[&quot;Minor&quot;]" />
-                            </Switch>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue key" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
-                              <ui:GetRowItem.Value>
-                                <OutArgument x:TypeArguments="x:String">[LabelValues]</OutArgument>
-                              </ui:GetRowItem.Value>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:GetRowItem>
-                            <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Labels" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="496.8,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2" Row="[CurrentRow]" Value="[LabelValues]">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:UpdateRowItem>
-                            <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Customer Reference No" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="496.8,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_26" Row="[CurrentRow]" Value="[LabelValues]">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:UpdateRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Custom field (Country)" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[CurrentRow]">
-                              <ui:GetRowItem.Value>
-                                <OutArgument x:TypeArguments="x:String">[CountryValues]</OutArgument>
-                              </ui:GetRowItem.Value>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:GetRowItem>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[CountryValues]" sap:VirtualizedContainerService.HintSize="496.8,304" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <Sequence x:Key="IN" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_5" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_17" Row="[CurrentRow]" Value="[&quot;DFS India&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="SG" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_10" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_18" Row="[CurrentRow]" Value="[&quot;MB Singapore&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="NZ" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_11" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_19" Row="[CurrentRow]" Value="[&quot;MB New Zealand&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="MY" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_12" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_20" Row="[CurrentRow]" Value="[&quot;MB Malaysia&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="KR" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_13" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_21" Row="[CurrentRow]" Value="[&quot;MB Korea&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="AU" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_14" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_22" Row="[CurrentRow]" Value="[&quot;MB Australia&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="JP" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_15" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_23" Row="[CurrentRow]" Value="[&quot;MB Japan&quot;]" />
-                              </Sequence>
-                              <Sequence x:Key="HK" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Project" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_16" Row="[CurrentRow]" Value="[&quot;Jira Sync Automation (JSA)&quot;]" />
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Region" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_24" Row="[CurrentRow]" Value="[&quot;MB Hong Kong&quot;]" />
-                              </Sequence>
-                            </Switch>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue type" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[CurrentRow]">
-                              <ui:GetRowItem.Value>
-                                <OutArgument x:TypeArguments="x:String">[TypeValues]</OutArgument>
-                              </ui:GetRowItem.Value>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:GetRowItem>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[TypeValues]" sap:VirtualizedContainerService.HintSize="496.8,492.8" sap2010:WorkflowViewState.IdRef="Switch`1_3">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <Sequence x:Key="Bug" sap:VirtualizedContainerService.HintSize="449.6,304.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Type" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="387.2,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_25" Row="[CurrentRow]" Value="[&quot;UAT Issues&quot;]" />
-                              </Sequence>
-                            </Switch>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Custom field (Application)" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="496.8,188" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[CurrentRow]">
-                              <ui:GetRowItem.Value>
-                                <OutArgument x:TypeArguments="x:String">[ProductValues]</OutArgument>
-                              </ui:GetRowItem.Value>
-                            </ui:GetRowItem>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[ProductValues]" sap:VirtualizedContainerService.HintSize="496.8,427.2" sap2010:WorkflowViewState.IdRef="Switch`1_4">
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="CMS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_28" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="WFS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_29" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
-                              <ui:UpdateRowItem ColumnIndex="{x:Null}" x:Key="POS" ColumnName="Custom field (Application)" sap:VirtualizedContainerService.HintSize="333.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_30" Row="[CurrentRow]" Value="[&quot;Retail&quot;]" />
-                            </Switch>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEachRow.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:ForEachRow>
-                    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Custom field (Country)" DataTable="[TempDatatable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
-                    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue type" DataTable="[TempDatatable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_2" />
-                    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Issue key" DataTable="[TempDatatable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="728,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_3" />
-                    <ui:FilterDataTable DataTable="[TempDatatable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="728,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[TempDatatable]" SelectColumnsMode="Keep">
+                    <ui:FilterDataTable DataTable="[TempDatatable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="387.2,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[TempDatatable]" SelectColumnsMode="Keep">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="EQ" />
@@ -422,28 +413,22 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:FilterDataTable>
-                    <ui:WriteCsvFile AddHeaders="True" DataTable="[TempDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="NewImportedFile.csv" sap:VirtualizedContainerService.HintSize="728,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
-                    <Assign sap:VirtualizedContainerService.HintSize="728,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[NewFileName]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">NewImportedFile</InArgument>
-                      </Assign.Value>
-                    </Assign>
                   </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ueab:ExcelApplicationCard>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:WriteCsvFile AddHeaders="True" DataTable="[TempDatatable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="NewImportedFile.csv" sap:VirtualizedContainerService.HintSize="484.8,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+              <Assign sap:VirtualizedContainerService.HintSize="484.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[NewFileName]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">NewImportedFile</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
           </Sequence>
         </ActivityAction>
-      </ueab:ExcelProcessScopeX.Body>
-    </ueab:ExcelProcessScopeX>
+      </p:PythonScope.Body>
+    </p:PythonScope>
   </Sequence>
 </Activity>
